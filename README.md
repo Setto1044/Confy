@@ -1,4 +1,4 @@
-# Confify
+# Confy
 ---
 ## SSAFY 12기 508
 - 멤버
