@@ -9,6 +9,6 @@ import java.util.Optional;
 
 @Repository
 public interface UserGroupRepository extends JpaRepository<UserGroup, Long> {
-    Optional<UserGroup> findByGroup_GroupIdAndUser_UserId(Long groupId, Long userId);
+    Optional<UserGroup> findByGroup_GroupIdAndUser_Id(Long groupId, Long id);
 
 }
