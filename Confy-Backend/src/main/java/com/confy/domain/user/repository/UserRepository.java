@@ -1,7 +1,7 @@
-package com.confy.user.repository;
+package com.confy.domain.user.repository;
 
 
-import com.confy.user.entity.User;
+import com.confy.domain.user.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
