@@ -5,10 +5,10 @@ import lombok.Data;
 import java.time.ZonedDateTime;
 
 @Data
-public class MeetingCommentDto {
+public class MeetingCommentTestDto {
     private String meetingId;
-    private String order;
     private String speaker;
     private String content;
+    private String order;
     private ZonedDateTime timestamp; // 다양한 나라 시간대 고려
 }

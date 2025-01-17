@@ -9,7 +9,7 @@ import lombok.ToString;
 @Setter
 @AllArgsConstructor
 @ToString
-public class RedisDataDto<T> {
+public class RedisDataTestDto<T> {
     String key;
     T value;
 }
