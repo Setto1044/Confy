@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:079a7d629e7cd33aa997babbd5102e98d9956af7b4429adca15996231814e894
-size 648
+# 배석진 Branch
+
+## 진도
+
+### 2025.01.16
+- Master에서 BaeSeokJin 브랜치 분리
+- Redis Docker 이미지에 회의 대화 등록
+- 회의실의 모든 텍스트 List 제공
