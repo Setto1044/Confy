@@ -1,7 +1,10 @@
+import React from "react";
+import HomeNavbar from "../../widgets/Navbar/HomeNavbar";
+
 const HomePage = () => {
   return (
     <div>
-      <h1>home</h1>
+      <HomeNavbar/>
     </div>
   );
 };
