@@ -7,7 +7,11 @@ const HomePage = () => {
     <div>
       <HomeNavbar/>
       <div className="">
-        <img src={ConfyBanner} alt="confy_banner"/>
+        <img 
+          src={ConfyBanner} 
+          alt="confy_banner" 
+          className="w-full"
+        />
       </div>
     </div>
   );
