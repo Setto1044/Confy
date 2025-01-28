@@ -1,17 +1,3 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-import HomePage from "../pages/HomePage/HomePage";
-import MainPage from "../pages/MainPage/MainPage";
-
-const AppRoutes = () => {
-  return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/main" element={<MainPage />} />
-      {/* 예외 처리 */}
-      <Route path="*" element={<div>404 - Page Not Found</div>} />
-    </Routes>
-  );
-};
-
-export default AppRoutes;
+version https://git-lfs.github.com/spec/v1
+oid sha256:e8ca03739af76e743313258dcaef2052a0602f038e94b09890478dbfea5f3ee8
+size 592
