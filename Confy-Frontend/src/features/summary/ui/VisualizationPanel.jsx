@@ -1,8 +1,11 @@
+import Button from "../../../widgets/Button/Button";
+
 const VisualizationPanel = () => {
     return (
-      <div>
-        <h2>시각화</h2>
-      </div>
+      <div className="relative p-2 h-92">
+      <h2>시각화</h2>
+      <Button className="absolute bottom-4 right-4">수정하기</Button>
+    </div>
     );
   };
   
