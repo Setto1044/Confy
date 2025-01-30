@@ -1,7 +1,7 @@
 const SummaryPanel = () => {
     return (
       <div>
-        <h2>시각화</h2>
+        <h2>요약정리</h2>
       </div>
     );
   };

@@ -1,3 +1,5 @@
+// 지워야할 페이지?? pages/MainPage/MainPage.jsx랑 합침
+
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
