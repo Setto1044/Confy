@@ -1,13 +1,3 @@
-import React from "react";
-import SearchBar from "./SearchBar";
-import styles from "../Header/MainHeader.module.css";
-
-const MainHeader = () => {
-  return (
-    <div className={styles.mainHeader}>
-      <SearchBar />
-    </div>
-  );
-};
-
-export default MainHeader;
+version https://git-lfs.github.com/spec/v1
+oid sha256:f87401b043a208bcd127095baa5d4927f350003c77a80f02e32f6451dc8f5036
+size 1809
