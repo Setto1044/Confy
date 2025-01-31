@@ -1,13 +1,3 @@
-import Button from "../../../widgets/Button/Button";
-
-const VisualizationPanel = () => {
-    return (
-      <div className="relative p-2 h-92">
-      <h2>시각화</h2>
-      <Button className="absolute bottom-4 right-4">수정하기</Button>
-    </div>
-    );
-  };
-  
-  export default VisualizationPanel;
-  
+version https://git-lfs.github.com/spec/v1
+oid sha256:fd03bd8984fa39bd2d230fe0e0a61d7b316afd166f4b5d036e47a496c0df28c5
+size 629
