@@ -7,3 +7,22 @@
   flex-shrink: 0;
   align-self: stretch;
 }
+
+.icon {
+  display: flex;
+  height: 60px;
+  padding: 7px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.profileImg {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 100px;
+}
