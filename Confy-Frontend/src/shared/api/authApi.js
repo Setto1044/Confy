@@ -1,9 +1,3 @@
-import axios from "axios";
-
-
-export const URL = 'http://localhost:5080/api';
-const authApi = {
-  login: async (email, password) => {},
-};
-
-export default authApi;
+version https://git-lfs.github.com/spec/v1
+oid sha256:2f874f09d6d3f591b44281231048f7c6b167104f8f28234d0927425510940855
+size 566
