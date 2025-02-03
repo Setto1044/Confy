@@ -6,8 +6,8 @@ const HomePage = () => {
   return (
     <div>
       <HomeHeader />
-      <div className="">
-        <img src={ConfyBanner} alt="confy_banner" className="w-full" />
+      <div>
+        <img src={ConfyBanner} alt="confy_banner" />
       </div>
     </div>
   );
