@@ -1,4 +1,5 @@
 import React from "react";
+import SummaryInfoHeader from "../../features/summary/ui/SummaryInfoHeader";
 import EditVisualization from "../../features/edit-visualization/ui/EditVisualization";
 import SummaryHeader from "../../widgets/Header/SummaryHeader";
 
@@ -7,7 +8,7 @@ const EditVisualizationPage = () => {
     <>
       <SummaryHeader/>
       <div className="p-4">
-        <h2 className="text-lg font-bold">시각화 편집</h2>
+      <SummaryInfoHeader />
         <EditVisualization />
       </div>
     </>
