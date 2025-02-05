@@ -1,21 +1,3 @@
-// Content-Type만 필요한 API용
-
-import axios from "axios";
-import { API_BASE_URL } from "../config/config";
-
-const defaultClient = axios.create({
-  baseURL: API_BASE_URL,
-  headers: {
-    "Content-Type": "application/json",
-  },
-});
-
-defaultClient.interceptors.response.use(
-  (response) => response,
-  (error) => {
-    console.error("❌ API 요청 실패:", error.response?.data || error.message);
-    return Promise.reject(error);
-  }
-);
-
-export default defaultClient;
+version https://git-lfs.github.com/spec/v1
+oid sha256:95d82f33415dab53e2f1dbc9a987f451e692bae0c3f6b2fff68313865f8e9a91
+size 524

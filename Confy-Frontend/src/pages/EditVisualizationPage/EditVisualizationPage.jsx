@@ -7,7 +7,7 @@ const EditVisualizationPage = () => {
   return (
     <>
       <SummaryHeader/>
-      <div className="p-4">
+      <div>
       <SummaryInfoHeader />
         <EditVisualization />
       </div>
