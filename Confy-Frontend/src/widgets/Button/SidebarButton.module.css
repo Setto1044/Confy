@@ -1,0 +1,23 @@
+.sidebarButton {
+  display: flex;
+  width: 230px;
+  height: 50px;
+  padding: 0px 20px;
+  align-items: center;
+  gap: 12px;
+}
+
+.sidebarButton:hover {
+  border-radius: 8px;
+  background: #e5e7eb;
+}
+
+.sidebarButton.active {
+  background: #e5e7eb;
+  border-radius: 8px;
+}
+
+.sidebarButton img {
+  width: 20px;
+  height: 20px;
+}

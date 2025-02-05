@@ -1,12 +1,3 @@
-import Button from "../../../widgets/Button/Button";
-
-const SummaryPanel = () => {
-  return (
-    <div className="relative p-2 h-92">
-      <h2>요약정리</h2>
-      <Button className="absolute bottom-4 right-4">수정하기</Button>
-    </div>
-  );
-};
-
-export default SummaryPanel;
+version https://git-lfs.github.com/spec/v1
+oid sha256:8d47b64edfcb9952cdc03bbedc4380dd98741b09285fcd3a91cbc4b7afad624b
+size 1606

@@ -8,11 +8,7 @@ const SearchBar = ({ onSearch }) => {
       <button>
         <img src={icon} alt="" />
       </button>
-      <input
-        type="text"
-        className={styles.inputField}
-        placeholder="검색어를 입력하세요"
-      />
+      <input type="text" className={styles.inputField} />
     </div>
   );
 };

@@ -1,4 +1,4 @@
-const SummaryHeader = () => {
+const SummaryInfoHeader = () => {
     return (
       <div className="">
         <h2 className="text-xl font-semibold">프론티어 그룹 / 신규 프로젝트 계획 회의</h2>
@@ -7,5 +7,5 @@ const SummaryHeader = () => {
     );
   };
   
-  export default SummaryHeader;
+  export default SummaryInfoHeader;
   
