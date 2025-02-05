@@ -1,17 +1,3 @@
-import React from "react";
-
-function GroupMemberItem({ name, email, role }) {
-  return (
-    <li className="flex items-center justify-between p-2">
-      <div>
-        <p className="text-gray-800 font-medium">{name}</p>
-        <p className="text-gray-500 text-sm">{email}</p>
-      </div>
-      <span className={`text-sm font-semibold ${role === "Admin" ? "text-blue-600" : "text-gray-600"}`}>
-        {role}
-      </span>
-    </li>
-  );
-}
-
-export default GroupMemberItem;
+version https://git-lfs.github.com/spec/v1
+oid sha256:9ea5851983cea3b3cc4725fb3528ea3eed6b771c68dc2eea73ddf01df8af11df
+size 522

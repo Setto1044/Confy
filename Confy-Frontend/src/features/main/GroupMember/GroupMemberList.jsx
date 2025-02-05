@@ -1,17 +1,3 @@
-import React from "react";
-import GroupMemberItem from "./GroupMemberItem";
-
-function GroupMemberList({ members }) {
-  return (
-    <div className="border-t pt-3">
-      <h3 className="text-gray-600 text-sm mb-2">그룹 멤버</h3>
-      <ul className="divide-y">
-        {members.map((member) => (
-          <GroupMemberItem key={member.id} name={member.name} email={member.email} role={member.role} />
-        ))}
-      </ul>
-    </div>
-  );
-}
-
-export default GroupMemberList;
+version https://git-lfs.github.com/spec/v1
+oid sha256:1a78da59b327554ba068e900c7418088603201d239164ca8a6ef6a0bd7ebc0e6
+size 552
