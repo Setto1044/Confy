@@ -1,18 +1,3 @@
-import React from "react";
-import SummaryInfoHeader from "../../features/summary/ui/SummaryInfoHeader";
-import EditVisualization from "../../features/edit-visualization/ui/EditVisualization";
-import SummaryHeader from "../../widgets/Header/SummaryHeader";
-
-const EditVisualizationPage = () => {
-  return (
-    <>
-      <SummaryHeader/>
-      <div className="p-4">
-      <SummaryInfoHeader />
-        <EditVisualization />
-      </div>
-    </>
-  );
-};
-
-export default EditVisualizationPage;
+version https://git-lfs.github.com/spec/v1
+oid sha256:e9c4928ccea15e4b7d817a225a5b30425ca78b49196231ee6adfc0169f867f24
+size 1829
