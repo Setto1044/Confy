@@ -1,4 +1,4 @@
-package com.confy.auth_user_group_service.common.auth.repository;
+package com.confy.auth_user_group_service.auth.repository;
 
 import java.time.LocalDateTime;
 
