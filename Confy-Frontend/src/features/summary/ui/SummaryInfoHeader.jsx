@@ -1,11 +1,3 @@
-const SummaryInfoHeader = () => {
-    return (
-      <div className="">
-        <h2 className="text-xl font-semibold">프론티어 그룹 / 신규 프로젝트 계획 회의</h2>
-        <p className="text-gray-500">2024.01.16 참여자: Alice, Bob, Charlie</p>
-      </div>
-    );
-  };
-  
-  export default SummaryInfoHeader;
-  
+version https://git-lfs.github.com/spec/v1
+oid sha256:5d801e7d8556f2e3d3fe4ff4f80e28192a1e9de74ed4d8086e9fd1ae6b38193d
+size 519
