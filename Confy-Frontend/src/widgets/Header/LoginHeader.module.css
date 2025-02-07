@@ -1,9 +1,9 @@
 .loginHeader {
   display: flex;
   width: 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
   gap: 10px;
 }
 
