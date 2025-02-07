@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:04a3354aa4157a75f4274400499c3cd97a4d00fcaa85ff242c5d7a02c3c89f04
-size 690
+.tabContainer {
+  display: flex;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: white;
+}
+
+.tab {
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  position: relative;
+}
+
+.tab.active {
+  background-color: #f3f4f6;
+}
+
+.tab:hover {
+  background-color: #f3f4f6;
+}
+
+.leftOnly {
+  border-right: 1px solid #e5e7eb;
+}
+
+.rightOnly {
+  border-left: 1px solid #e5e7eb;
+}
