@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bec3d9d01804c271047001cbe3b3932745cbce53a9dd47bc815e802c3c0f76d5
-size 672
+package com.confy.service.meeting.MMSToClient;
+
+import com.confy.dto.MMSToClient.MeetingCreateRequestDto;
+import com.confy.entity.Meeting;
+import com.confy.repository.MeetingRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.time.LocalDateTime;
+
+public interface MeetingService {
+
+    void saveMeeting(Meeting meeting);
+
+    Meeting generateUUID(Long id, MeetingCreateRequestDto dto);
+}
