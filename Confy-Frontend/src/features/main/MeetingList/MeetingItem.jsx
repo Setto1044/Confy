@@ -1,14 +1,3 @@
-import React from "react";
-import styles from "../MeetingList/MeetingItem.module.css";
-
-const MeetingItem = ({ meeting }) => {
-  return (
-    <div className={styles.list}>
-      <div className={styles.listTitle}>{meeting.title}</div>
-      <div className={styles.listGroup}>{meeting.group}</div>
-      <div className={styles.listDate}>{meeting.date}</div>
-    </div>
-  );
-};
-
-export default MeetingItem;
+version https://git-lfs.github.com/spec/v1
+oid sha256:9343a848c96afb5bbdeab60c9d95ce9a4e1e939463ce8f1bcc65071102e0b789
+size 1774

@@ -1,17 +1,3 @@
-import React from "react";
-import EditVisualization from "../../features/edit-visualization/ui/EditVisualization";
-import SummaryHeader from "../../widgets/Header/SummaryHeader";
-
-const EditVisualizationPage = () => {
-  return (
-    <>
-      <SummaryHeader/>
-      <div className="p-4">
-        <h2 className="text-lg font-bold">시각화 편집</h2>
-        <EditVisualization />
-      </div>
-    </>
-  );
-};
-
-export default EditVisualizationPage;
+version https://git-lfs.github.com/spec/v1
+oid sha256:be611f7cd87e464d65f5a5688ce6a1180ec204e147db5b05179647ed9715cd3c
+size 2363
