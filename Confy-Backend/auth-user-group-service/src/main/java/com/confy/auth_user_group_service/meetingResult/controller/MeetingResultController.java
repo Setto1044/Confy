@@ -1,14 +1,3 @@
-package com.confy.auth_user_group_service.meetingResult.controller;
-
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-@Slf4j
-@RestController
-@RequestMapping("/api/meetings/list")
-public class MeetingResultController {
-
-    
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:525b3e68b491899c6af5b5dc18f4c7ae7eb36e7b12c472d0cdd32ceea22b80de
+size 1499

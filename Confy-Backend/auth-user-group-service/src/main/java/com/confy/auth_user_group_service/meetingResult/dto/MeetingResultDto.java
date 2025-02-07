@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class MeetingInfoDto {
+public class MeetingResultDto {
     private Long id;
     private String meetingNName;
     private String meetingUUID;
@@ -15,4 +15,8 @@ public class MeetingInfoDto {
     private Long groupId;
     private String textSummary;
     private String summaryImagePath;
+
+    // have to add
+    private String groupName;
+    private boolean isFavorite;
 }
