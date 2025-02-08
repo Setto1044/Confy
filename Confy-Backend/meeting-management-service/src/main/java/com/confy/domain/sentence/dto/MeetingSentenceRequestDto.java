@@ -1,14 +1,3 @@
-package com.confy.domain.sentence.dto;
-
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-public class MeetingSentenceRequestDto {
-    private String meetingId;
-    private String speaker;
-    private String content;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:55c6cad2d3311be28b53b691a9b3905db89a82958b0223859ba2eecbaf9a95c7
+size 758
