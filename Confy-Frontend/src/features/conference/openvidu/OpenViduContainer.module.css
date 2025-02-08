@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5cc4973ee2e001edb989743a65fec57fe9849eb76621492305c05ac6e2685e53
-size 797
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+.mainContent {
+  flex: 1;
+  width: 100%;
+  transition: width 0.3s ease;
+}
+
+.mainContent.withSidebar {
+  width: calc(100% - 420px); /* 사이드바(80px) + 패널(340px) */
+}
