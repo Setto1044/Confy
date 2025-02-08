@@ -7,6 +7,7 @@ import java.time.LocalDateTime;
 
 public interface UserMeetingService {
 
-    public UserMeeting saveUserMeeting(Meeting meeting, Long userId);
+    UserMeeting saveUserMeeting(Meeting meeting, Long userId);
+    void exitMeeting(Long meetingId, Long userId);
 
 }
