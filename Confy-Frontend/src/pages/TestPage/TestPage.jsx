@@ -1,15 +1,3 @@
-import React from "react";
-import MeetingRoom from "../../features/conference/openvidu/ui/MeetingRoom";
-import Sidebar from "../../features/conference/Sidebar/Sidebar";
-
-const TestPage = () => {
-  return (
-    <>
-        <h1>사이드바 테스트 페이지</h1>
-        <MeetingRoom/>
-        <Sidebar />
-    </>
-  );
-};
-
-export default TestPage;
+version https://git-lfs.github.com/spec/v1
+oid sha256:22233b05bed0cd55163dd7b2d1263e3fa075ea3c367a7c12990e2ee7545b4d2f
+size 879
