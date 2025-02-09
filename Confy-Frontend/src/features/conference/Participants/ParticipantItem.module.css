@@ -1,0 +1,30 @@
+.participant {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .name {
+    flex-grow: 1;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .iconMuted {
+    color: red;
+    font-size: 16px;
+  }
+  
+  .iconDisabled {
+    color: gray;
+    font-size: 16px;
+  }
+  
