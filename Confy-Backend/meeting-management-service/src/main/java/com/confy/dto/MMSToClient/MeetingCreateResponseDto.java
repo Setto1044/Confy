@@ -8,9 +8,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class MeetingCreateResponseDto {
+    private Long meetingId;
     private String UUID;
 
-    public static MeetingCreateResponseDto of(String uuid) {
-        return new MeetingCreateResponseDto(uuid); // 기존 필드명을 유지하면서 `of` 사용
+    public static MeetingCreateResponseDto of(Long meetingId, String uuid) {
+        return new MeetingCreateResponseDto(meetingId, uuid); // 기존 필드명을 유지하면서 `of` 사용
     }
 }
