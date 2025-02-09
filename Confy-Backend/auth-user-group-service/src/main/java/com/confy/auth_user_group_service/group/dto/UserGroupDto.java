@@ -1,17 +1,3 @@
-package com.confy.auth_user_group_service.group.dto;
-
-import com.confy.auth_user_group_service.user.entity.User;
-import lombok.Getter;
-
-@Getter
-public class UserGroupDto {
-    private Long userId;
-    private String userEmail;
-    private final String userFullName;
-
-    public UserGroupDto(User user) {
-        this.userId = user.getId();
-        this.userEmail = user.getEmail();
-        this.userFullName = user.getFullName();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ce9a0910e18a674d1d6a892377091aeb3dd195e4c91ef65750139641cd5fb30c
+size 752
