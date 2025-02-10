@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class GptResponseDto {
-    private Long meetingPk;
+    private Long meetingId;
     private String summary;
     private String visualization;
     private String keywords;
