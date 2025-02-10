@@ -11,9 +11,7 @@ import java.util.Map;
 @AllArgsConstructor
 @NoArgsConstructor
 public class GptRequestDto {
-    private Long meetingPk;
+    private Long meetingId;
     private List<Map<String, Object>> script;
-    private Integer startTime;
-    private Integer endTime;
 
 }
