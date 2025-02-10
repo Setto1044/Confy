@@ -7,7 +7,7 @@ import java.util.Map;
 
 @Data
 public class RealTimeRequest {
-    private Long meetingPk;
+    private Long meetingId;
     private List<Map<String, Object>> script;
 
     private Integer startTime;

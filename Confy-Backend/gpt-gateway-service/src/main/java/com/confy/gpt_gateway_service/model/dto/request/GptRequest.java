@@ -7,6 +7,6 @@ import java.util.Map;
 
 @Data
 public class GptRequest {
-    private Long meetingPk;
+    private Long meetingId;
     private List<Map<String, Object>> script;
 }

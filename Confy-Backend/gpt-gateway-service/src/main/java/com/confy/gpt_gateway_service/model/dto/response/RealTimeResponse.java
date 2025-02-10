@@ -8,6 +8,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class RealTimeResponse {
-    private Long meetingPk;         // 회의의 고유 ID
+    private Long meetingId;         // 회의의 고유 ID
     private String summary;         // 회의 요약 결과
 }
