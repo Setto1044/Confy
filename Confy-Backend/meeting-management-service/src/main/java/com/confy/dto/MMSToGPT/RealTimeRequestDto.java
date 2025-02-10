@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Map;
 
@@ -11,9 +12,7 @@ import java.util.Map;
 @AllArgsConstructor
 @NoArgsConstructor
 public class RealTimeRequestDto {
-    private Long meetingId;
-    private List<Map<String, Object>> script;
-    private Integer startTime;
-    private Integer endTime;
+    private Long startTime;
+    private Long endTime;
 
 }
