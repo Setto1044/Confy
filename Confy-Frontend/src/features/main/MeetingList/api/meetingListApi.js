@@ -1,15 +1,3 @@
-import defaultClient from "../../../shared/api/apiClient/defaultClient";
-
-// ✅ 내가 참여한 모든 회의 리스트 조회
-export const getMeetingList = async (meetingId) => {
-  const finalMeetingId = meetingId;
-
-  if (!finalMeetingId) throw new Error("❌ meetingId가 필요합니다.");
-
-  const response = await defaultClient.get(
-    `/meetings/results?type=all&cursor={id}&size={N}`
-  );
-  return response.data?.data?.script || [];
-};
-
-// ✅ 특정 그룹 회의 리스트 리스트 조회
+version https://git-lfs.github.com/spec/v1
+oid sha256:5d41bba1115a6e1a2907a48b9412f455a480717479ec8740aea1d3e3d83d986c
+size 789
