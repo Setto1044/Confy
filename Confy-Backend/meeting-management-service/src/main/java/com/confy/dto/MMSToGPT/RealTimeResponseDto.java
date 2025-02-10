@@ -8,6 +8,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class RealTimeResponseDto {
-    private Long meetingPk;
+    private Long meetingId;
     private String summary;
 }
