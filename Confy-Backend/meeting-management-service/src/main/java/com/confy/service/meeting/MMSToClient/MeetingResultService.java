@@ -1,13 +1,3 @@
-package com.confy.service.meeting.MMSToClient;
-
-import com.confy.dto.MMSToGPT.GptResponseDto;
-import com.confy.vo.SentenceVo;
-
-import java.util.List;
-
-public interface MeetingResultService {
-//    void saveScriptToMySQL(List<SentenceVo> script); // 지금은 sttService에서 처리
-    void saveVisualizationToMySQL(GptResponseDto visualization);
-    void saveSummaryToMySQL(GptResponseDto summary);
-    void saveKeywordsToMySQL(GptResponseDto keywords);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:66d2ba00d0392a3249ca6c461092d4d1638daf16f8c827f06ae94295a5753b36
+size 823
