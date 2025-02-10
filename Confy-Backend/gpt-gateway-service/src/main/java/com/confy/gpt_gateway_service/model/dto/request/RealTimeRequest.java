@@ -6,7 +6,10 @@ import java.util.List;
 import java.util.Map;
 
 @Data
-public class GptRequest {
+public class RealTimeRequest {
     private Long meetingPk;
     private List<Map<String, Object>> script;
+
+    private Integer startTime;
+    private Integer endTime;
 }
