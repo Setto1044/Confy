@@ -4,12 +4,16 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+import java.util.Map;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class GptResponseDto {
+public class RealTimeRequestDto {
     private Long meetingId;
-    private String summary;
-    private String visualization;
-    private String keywords;
+    private List<Map<String, Object>> script;
+    private Integer startTime;
+    private Integer endTime;
+
 }
