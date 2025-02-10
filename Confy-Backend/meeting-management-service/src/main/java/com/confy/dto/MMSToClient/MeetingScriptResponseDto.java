@@ -4,14 +4,16 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
+import java.util.List;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class MeetingCreateResponseDto {
-    private Long meetingId;
-    private String UUID;
+public class MeetingScriptResponseDto {
+    private List<SentenceDto> script;
 
-    public static MeetingCreateResponseDto of(Long meetingId, String uuid) {
-        return new MeetingCreateResponseDto(meetingId, uuid); // 기존 필드명을 유지하면서 `of` 사용
+    public static MeetingScriptResponseDto of(List<SentenceDto> script) {
+        return new MeetingScriptResponseDto(script);
     }
 }
