@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bec3d9d01804c271047001cbe3b3932745cbce53a9dd47bc815e802c3c0f76d5
-size 672
+package com.confy.service.meeting.MMSToClient;
+
+import com.confy.dto.MMSToClient.MeetingCreateRequestDto;
+import com.confy.entity.Meeting;
+
+public interface MeetingService {
+
+    void saveMeeting(Meeting meeting, String visualType);
+
+    Meeting generateUUID(Long id, MeetingCreateRequestDto dto);
+
+    boolean finishMeeting(Long meetingId, String meetingUuid, Long userId);
+}

@@ -1,13 +1,3 @@
-package com.confy.repository;
-
-import com.confy.entity.Meeting;
-import com.confy.entity.UserMeeting;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-
-import java.util.Optional;
-
-@Repository
-public interface UserMeetingRepository extends JpaRepository<UserMeeting, Integer> {
-    Optional<UserMeeting> findByMeetingAndUserId(Meeting meeting, Long userId);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ce0538cdb6dd30d998a80868ce4b579f77e671d3ddc2ea648cedb0cccde1f01d
+size 969
