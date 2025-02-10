@@ -8,5 +8,5 @@ import java.util.List;
 
 @Repository
 public interface SentenceRepository extends JpaRepository<Sentence, Long> {
-    List<Sentence> findByMeetingId(Long meetingId);
+    List<Sentence> findByMeeting_MeetingId(Long meetingId);
 }
