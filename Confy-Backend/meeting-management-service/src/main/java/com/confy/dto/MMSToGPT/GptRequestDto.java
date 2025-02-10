@@ -15,5 +15,4 @@ public class GptRequestDto {
     private List<Map<String, Object>> script;
     private Integer startTime;
     private Integer endTime;
-
 }
