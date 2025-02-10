@@ -10,8 +10,10 @@ import java.util.Map;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class GptRequestDto {
+public class RealTimeRequestDto {
     private Long meetingPk;
     private List<Map<String, Object>> script;
+    private Integer startTime;
+    private Integer endTime;
 
 }
