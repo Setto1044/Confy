@@ -1,22 +1,3 @@
-package com.confy.auth_user_group_service.meetingResult.dto;
-
-import lombok.*;
-
-import java.time.LocalDateTime;
-
-@Getter
-@NoArgsConstructor
-@AllArgsConstructor
-public class MeetingResultDto {
-    private Long id;
-    private String meetingNName;
-    private String meetingUUID;
-    private LocalDateTime startedAt;
-    private Long groupId;
-    private String textSummary;
-    private String summaryImagePath;
-
-    // have to add
-    private String groupName;
-    private boolean isFavorite;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:12a6d3b036e78e866d2bf5fc5dc54e37d81691f5d0bd267d03d036df7c8b4ad8
+size 558
