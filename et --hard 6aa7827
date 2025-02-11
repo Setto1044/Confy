@@ -1,0 +1,194 @@
+[33mb51981e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/summary[m[33m)[m HEAD@{0}: reset: moving to HEAD~
+[33m6aa7827[m HEAD@{1}: commit: 💄 Style: 요약페이지 CSS 수정
+[33mb51981e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/summary[m[33m)[m HEAD@{2}: commit: 💄 Style: 패널 CSS 수정
+[33m807ae1c[m HEAD@{3}: commit: 💄 Style:summary페이지 탭바 스타일 tailwind -> module.css변경
+[33m4e87cb6[m[33m ([m[1;31morigin/develop[m[33m, [m[1;32mfeature/conferenceSidebar[m[33m, [m[1;32mdevelop[m[33m)[m HEAD@{4}: checkout: moving from feature/conferenceSidebar to feature/summary
+[33m4e87cb6[m[33m ([m[1;31morigin/develop[m[33m, [m[1;32mfeature/conferenceSidebar[m[33m, [m[1;32mdevelop[m[33m)[m HEAD@{5}: checkout: moving from feature/summary to feature/conferenceSidebar
+[33m4e87cb6[m[33m ([m[1;31morigin/develop[m[33m, [m[1;32mfeature/conferenceSidebar[m[33m, [m[1;32mdevelop[m[33m)[m HEAD@{6}: pull origin develop: Fast-forward
+[33m39ec18e[m[33m ([m[1;31morigin/feature/summary[m[33m)[m HEAD@{7}: checkout: moving from develop to feature/summary
+[33m4e87cb6[m[33m ([m[1;31morigin/develop[m[33m, [m[1;32mfeature/conferenceSidebar[m[33m, [m[1;32mdevelop[m[33m)[m HEAD@{8}: pull origin develop: Fast-forward
+[33m852a2ef[m HEAD@{9}: checkout: moving from feature/summary to develop
+[33m39ec18e[m[33m ([m[1;31morigin/feature/summary[m[33m)[m HEAD@{10}: commit: ♻️ Refact : editvisualization페이지 폴더 구조 변경
+[33m917204b[m HEAD@{11}: pull origin feature/summary: Fast-forward
+[33m852a2ef[m HEAD@{12}: checkout: moving from develop to feature/summary
+[33m852a2ef[m HEAD@{13}: checkout: moving from feature/ReactFlow to develop
+[33mb6cc1a5[m[33m ([m[1;31morigin/feature/ReactFlow[m[33m)[m HEAD@{14}: commit: ✨ Feat: 화상회의 사이드바 구현
+[33m852a2ef[m HEAD@{15}: pull origin develop: Fast-forward
+[33med837ad[m HEAD@{16}: checkout: moving from develop to feature/ReactFlow
+[33m852a2ef[m HEAD@{17}: pull origin develop: Fast-forward
+[33m806033c[m HEAD@{18}: checkout: moving from feature/merge to develop
+[33m37eaf34[m[33m ([m[1;31morigin/feature/merge[m[33m)[m HEAD@{19}: commit: 🔀 Merge : FE 코드 병합
+[33m6f33686[m HEAD@{20}: pull origin develop: Merge made by the 'ort' strategy.
+[33med837ad[m HEAD@{21}: checkout: moving from feature/ReactFlow to feature/merge
+[33med837ad[m HEAD@{22}: commit: 💄 Style: edit-visualization 페이지 css 수정
+[33mcfffa80[m HEAD@{23}: commit: ♻️ Refact: EditVisualization 페이지 코드 fsd구조로 변경
+[33mb04e7b5[m HEAD@{24}: commit: ✨ Feat: ReactFlow 수정시, 요약페이지에 바로 반영
+[33m4777c3c[m HEAD@{25}: commit: ✨ Feat: ReactFlow 수정 기능 완료
+[33m806033c[m HEAD@{26}: checkout: moving from develop to feature/ReactFlow
+[33m806033c[m HEAD@{27}: pull origin develop: Fast-forward
+[33me283518[m HEAD@{28}: checkout: moving from feature/ReactFlow to develop
+[33m53c6804[m HEAD@{29}: commit: 🔧 Chore: apiClient 폴더 추가
+[33m7a9697b[m HEAD@{30}: checkout: moving from feature/SummaryHeader to feature/ReactFlow
+[33m7a9697b[m HEAD@{31}: reset: moving to HEAD
+[33m7a9697b[m HEAD@{32}: reset: moving to 7a9697bb37b4b45fd2e5b26039f5cb5c173bdbdf
+[33m7a9697b[m HEAD@{33}: commit: 💄 Style: summary페이지 시각화, 요약정리 버튼 위치 수정
+[33m6db8183[m HEAD@{34}: commit: 🔧 Chore : gitignore에 .env 추가
+[33m9ea436e[m HEAD@{35}: Branch: renamed refs/heads/feture/SummaryHeader to refs/heads/feature/SummaryHeader
+[33m9ea436e[m HEAD@{37}: commit: ✨ Feat: SummaryHeader 캘린더 토글 구현
+[33me283518[m HEAD@{38}: checkout: moving from feature/summary-header to feture/SummaryHeader
+[33ma32b7c8[m HEAD@{39}: checkout: moving from feture/SummaryHeader to feature/summary-header
+[33me283518[m HEAD@{40}: checkout: moving from develop to feture/SummaryHeader
+[33me283518[m HEAD@{41}: pull origin develop: Fast-forward
+[33mf5d4095[m HEAD@{42}: checkout: moving from feature/summary-header to develop
+[33ma32b7c8[m HEAD@{43}: commit: ✨ Feat: summaryheader 캘린더 토글 추가
+[33mf5d4095[m HEAD@{44}: checkout: moving from develop to feature/summary-header
+[33mf5d4095[m HEAD@{45}: checkout: moving from feature/visualization to develop
+[33mf5d4095[m HEAD@{46}: checkout: moving from develop to feature/visualization
+[33mf5d4095[m HEAD@{47}: checkout: moving from feature/visualization to develop
+[33mf5d4095[m HEAD@{48}: checkout: moving from feature/visualization to feature/visualization
+[33mf5d4095[m HEAD@{49}: pull origin develop: Fast-forward
+[33m23f3c71[m HEAD@{50}: checkout: moving from develop to feature/visualization
+[33mf5d4095[m HEAD@{51}: pull origin develop: Fast-forward
+[33m4b8df8d[m HEAD@{52}: checkout: moving from feature/openvidu-ui to develop
+[33m9826bc0[m[33m ([m[1;31morigin/feature/openvidu-ui[m[33m)[m HEAD@{53}: commit: ✨ Feat: 오픈비두 파일.jsx로 수정
+[33m057a5df[m HEAD@{54}: commit: ⚡️ Feat: OpenViduContainer tsx -> js 수정
+[33m45880b1[m HEAD@{55}: commit: ✨ Feat: Openvidu 코드 jsx 변환 완료
+[33m553f40e[m HEAD@{56}: commit: ✨ Feat: Openvidu 코드 수정 완료
+[33m4d6a0aa[m HEAD@{57}: commit: ✨ Feat: Openvidu 코드 수정
+[33m4b8df8d[m HEAD@{58}: checkout: moving from develop to feature/openvidu-ui
+[33m4b8df8d[m HEAD@{59}: checkout: moving from 4b8df8d2cca5c6b9eecde87ec9ba226e1169b2ec to develop
+[33m4b8df8d[m HEAD@{60}: checkout: moving from 10e5aaa5908d1a35e854e75f221635b97882e4ad to feature/openvidu
+[33m10e5aaa[m[33m ([m[1;31morigin/feature/main[m[33m)[m HEAD@{61}: checkout: moving from develop to feature/main
+[33m4b8df8d[m HEAD@{62}: checkout: moving from feature/main to develop
+[33m10e5aaa[m[33m ([m[1;31morigin/feature/main[m[33m)[m HEAD@{63}: checkout: moving from develop to feature/main
+[33m4b8df8d[m HEAD@{64}: checkout: moving from feature/main to develop
+[33m32fa1e7[m HEAD@{65}: commit (merge): Merge branch 'feature/main' of https://lab.ssafy.com/s12-webmobile2-sub1/S12P11A508 into feature/main
+[33m4b8df8d[m HEAD@{66}: checkout: moving from develop to feature/main
+[33m4b8df8d[m HEAD@{67}: checkout: moving from feature/openvidu to develop
+[33m4b8df8d[m HEAD@{68}: checkout: moving from develop to feature/openvidu
+[33m4b8df8d[m HEAD@{69}: pull origin develop: Fast-forward
+[33m79159a4[m HEAD@{70}: checkout: moving from feature/redux to develop
+[33m4b8df8d[m HEAD@{71}: pull origin develop: Fast-forward
+[33me78211e[m[33m ([m[1;31morigin/feature/redux[m[33m)[m HEAD@{72}: commit: ✨ Feat: OpenViduContanier.jsx 코드추가
+[33m6398169[m HEAD@{73}: commit: ✨ Feat: redux로 로그인 상태관리
+[33m79159a4[m HEAD@{74}: checkout: moving from develop to feature/redux
+[33m79159a4[m HEAD@{75}: pull origin develop: Fast-forward
+[33m69cb0ad[m[33m ([m[1;31morigin/feature/auth[m[33m)[m HEAD@{76}: checkout: moving from feature/auth to develop
+[33m69cb0ad[m[33m ([m[1;31morigin/feature/auth[m[33m)[m HEAD@{77}: merge develop: Fast-forward
+[33me6a40b7[m HEAD@{78}: checkout: moving from develop to feature/auth
+[33m69cb0ad[m[33m ([m[1;31morigin/feature/auth[m[33m)[m HEAD@{79}: commit: ✨ Feat: 로그인, 회원가입 서버 연결 완료
+[33me6a40b7[m HEAD@{80}: checkout: moving from feature/summary to develop
+[33m61a8e83[m HEAD@{81}: commit: ✨ Feat: 로그인 redux구현중
+[33m1cfc8a9[m HEAD@{82}: merge develop: Merge made by the 'ort' strategy.
+[33m4d72f26[m HEAD@{83}: checkout: moving from develop to feature/summary
+[33me6a40b7[m HEAD@{84}: pull origin develop: Fast-forward
+[33mf7f1f5f[m HEAD@{85}: checkout: moving from feature/summary to develop
+[33m4d72f26[m HEAD@{86}: commit: ✨ Feat: 회원가입 백엔드 통신 확인
+[33mb5e1b81[m HEAD@{87}: pull origin feature/summary: Fast-forward
+[33meb95b01[m HEAD@{88}: commit: ✨ Feat: Summary페이지-요약정리 수정하기 버튼 추가
+[33ma722ce0[m HEAD@{89}: commit: 🔧 Chore: .env 수정
+[33m2d73959[m HEAD@{90}: commit: ✨ Feat: [FE] SummaryPage 요약정리 api 구현
+[33m2ddd0b0[m HEAD@{91}: commit: ✨ Feat: [FE] SummaryPage에 스크립트 api 불러오기
+[33m5849d05[m HEAD@{92}: commit: ♻️ Feat: [FE] FSD구조로 api파일 정리
+[33mdf4231c[m HEAD@{93}: commit: ♻️ Refactor: [FE] 환경변수 설정
+[33m6bf2d25[m HEAD@{94}: commit: ♻️ Refactor: [FE] SummaryPage 반응형 탭바분리
+[33m23f3c71[m HEAD@{95}: merge feature/visualization: Fast-forward
+[33m385a0e5[m HEAD@{96}: checkout: moving from feature/visualization to feature/summary
+[33m23f3c71[m HEAD@{97}: commit: ✨ Feat: [FE] SummaryPage/api 추가
+[33m9fe85eb[m HEAD@{98}: commit: ✨ Feat: [FE] 로그아웃 구현
+[33mbc4b0cd[m HEAD@{99}: commit: ♻️ Refactor: API 명세서에 맞게 로그인 & 회원가입 로직 리팩토링
+[33m3bf7f7a[m HEAD@{100}: commit: 🐛 Feat: 로그인 로직 수정
+[33mcc04ee6[m HEAD@{101}: commit: 🐛 Feat: 회원가입 로직 수정
+[33m7b7a4ec[m HEAD@{102}: pull origin develop: Merge made by the 'ort' strategy.
+[33m2b97254[m HEAD@{103}: commit: ✨ Feat: EditVisualizationPage, SummaryPage 연결
+[33mf1abcbc[m HEAD@{104}: commit: ✨ Feat : EditVisualizationPage 생성
+[33mf7f1f5f[m HEAD@{105}: reset: moving to HEAD
+[33mf7f1f5f[m HEAD@{106}: reset: moving to HEAD
+[33mf7f1f5f[m HEAD@{107}: checkout: moving from develop to feature/visualization
+[33mf7f1f5f[m HEAD@{108}: pull origin develop: Fast-forward
+[33m829d456[m HEAD@{109}: checkout: moving from feature/signup-fix to develop
+[33mba8eba3[m[33m ([m[1;31morigin/feature/signup-fix[m[33m)[m HEAD@{110}: commit: 🐛 Fix: 회원가입 로직 구현
+[33m829d456[m HEAD@{111}: merge develop: Fast-forward
+[33mc0111b0[m HEAD@{112}: checkout: moving from develop to feature/signup-fix
+[33m829d456[m HEAD@{113}: commit (merge): ✨ Feat : FE 회원가입, 로그인 api 병합
+[33mc0111b0[m HEAD@{114}: merge feature/signup_api: Fast-forward
+[33m9ffc1f8[m HEAD@{115}: checkout: moving from feature/signup_api to develop
+[33mc0111b0[m HEAD@{116}: commit: ✨ Feat : 회원가입 api 완료
+[33mb34eaa5[m HEAD@{117}: commit: ✨ Feat : 회원가입 axios 구현
+[33m414434f[m HEAD@{118}: commit: ✨ Feat: 회원가입 axios 구현중
+[33m9ffc1f8[m HEAD@{119}: checkout: moving from develop to feature/signup_api
+[33m9ffc1f8[m HEAD@{120}: pull origin develop: Fast-forward
+[33mc6b8ae7[m HEAD@{121}: pull origin develop: Fast-forward
+[33m217af9e[m HEAD@{122}: pull origin develop: Fast-forward
+[33m9198a33[m[33m ([m[1;31morigin/feature/homepage[m[33m)[m HEAD@{123}: checkout: moving from feature/homepage to develop
+[33m217af9e[m HEAD@{124}: pull origin develop: Fast-forward
+[33m9198a33[m[33m ([m[1;31morigin/feature/homepage[m[33m)[m HEAD@{125}: merge develop: Fast-forward
+[33mdc8487c[m HEAD@{126}: checkout: moving from develop to feature/homepage
+[33m9198a33[m[33m ([m[1;31morigin/feature/homepage[m[33m)[m HEAD@{127}: commit (merge): 💄 Style : HomePage MainPage 병합
+[33mdc8487c[m HEAD@{128}: checkout: moving from feature/homepage to develop
+[33mdc8487c[m HEAD@{129}: merge develop: Fast-forward
+[33mfda69ef[m HEAD@{130}: checkout: moving from develop to feature/homepage
+[33mdc8487c[m HEAD@{131}: merge feature/widgets: Fast-forward
+[33mc9b6df7[m HEAD@{132}: checkout: moving from feature/widgets to develop
+[33mdc8487c[m HEAD@{133}: commit: ✨ Feat: ProfileModel과 MainNavbar 연결
+[33mf8041a5[m HEAD@{134}: commit: ✨ Feat: GroupInviteModal 생성
+[33m385a0e5[m HEAD@{135}: merge feature/summary: Fast-forward
+[33m0cce31a[m HEAD@{136}: checkout: moving from feature/summary to feature/widgets
+[33m385a0e5[m HEAD@{137}: commit: ✨ Feat: NotificationModel 세부 수정
+[33m731758c[m HEAD@{138}: commit: ✨ Feat: NotificationModel 생성
+[33m3d92ff1[m HEAD@{139}: commit: ✨ Feat: ProfileModel 탭 바 생성
+[33m4b196c1[m HEAD@{140}: commit: ✨ Feat: ProfileModel 생성
+[33m4b9e5d9[m HEAD@{141}: reset: moving to HEAD
+[33m4b9e5d9[m HEAD@{142}: commit: ✨ Feat: SummaryPage 시각화, 요약정리에 수정하기 버튼 추가
+[33m0cce31a[m HEAD@{143}: merge feature/widgets: Fast-forward
+[33mac7780f[m HEAD@{144}: checkout: moving from feature/widgets to feature/summary
+[33m0cce31a[m HEAD@{145}: commit: ✨ Feat: ConferenceStart 관련 모달 수정
+[33m78d442c[m HEAD@{146}: commit: ✨ Feat: ConferenceReserveModal 생성
+[33mbd2ddfa[m HEAD@{147}: commit: ✨ Feat: ConferenceCreateModal 생성
+[33m5172d31[m HEAD@{148}: reset: moving to HEAD
+[33m5172d31[m HEAD@{149}: commit: 💄 Style: ConferenceStartModal 사이즈 조정
+[33m33a0660[m HEAD@{150}: commit: ✨ Feat: ConferenceStartModel 추가
+[33mc8426a0[m HEAD@{151}: merge feature/summary: Merge made by the 'ort' strategy.
+[33m2fea449[m HEAD@{152}: checkout: moving from feature/widgets to feature/widgets
+[33m2fea449[m HEAD@{153}: checkout: moving from feature/summary to feature/widgets
+[33mac7780f[m HEAD@{154}: checkout: moving from feature/widgets to feature/summary
+[33m2fea449[m HEAD@{155}: checkout: moving from feature/summary to feature/widgets
+[33mac7780f[m HEAD@{156}: commit (amend): :lipstick: Style: IcnnButton 수정, MainPage에 회의 시작 버튼 수정
+[33m6201aa4[m HEAD@{157}: commit (amend): � Style: IcnnButton 수정, MainPage에 회의 시작 버튼 수정
+[33m4441887[m HEAD@{158}: commit (amend): :lipstick: Style: IcnnButton 수정, MainPage에 회의 시작 버튼 수정
+[33mf36416d[m HEAD@{159}: reset: moving to HEAD
+[33mf36416d[m HEAD@{160}: commit: 💄 IconButton 수정, MainPage에 IconButton 추가
+[33m9599535[m HEAD@{161}: commit: 💄 Style: SummaryPage 스타일 수정
+[33m9bc5542[m HEAD@{162}: commit: 📦️ Chore: react-resizable 설치
+[33mc8e600b[m HEAD@{163}: commit: ✨ Feat: 탭 바 기능 수정
+[33m581cdac[m HEAD@{164}: commit: ✨ Feat: SummaryPage 탭 바 기능 생성
+[33m93a2c90[m HEAD@{165}: checkout: moving from feature/widgets to feature/summary
+[33m2fea449[m HEAD@{166}: commit: 💄 Style: HomePage 네비바 디자인 수정
+[33m93a2c90[m HEAD@{167}: merge feature/summary: Fast-forward
+[33m27ec2af[m HEAD@{168}: checkout: moving from feature/summary to feature/widgets
+[33m93a2c90[m HEAD@{169}: commit: ✨ Feat: SummaryPage ui 구성
+[33m4b8f2f5[m HEAD@{170}: commit: ✨ Feat: summary페이지 네비바 추가
+[33m27ec2af[m HEAD@{171}: checkout: moving from feature/widgets to feature/summary
+[33m27ec2af[m HEAD@{172}: checkout: moving from feature/meeting-detail to feature/widgets
+[33m27ec2af[m HEAD@{173}: checkout: moving from feature/widgets to feature/meeting-detail
+[33m27ec2af[m HEAD@{174}: commit: ⚡️ Feat : MainNavbar 코드 수정
+[33m312f993[m HEAD@{175}: commit: ✨ Feat: MainPage 네비바
+[33mfda69ef[m HEAD@{176}: checkout: moving from feature/homepage to feature/widgets
+[33mfda69ef[m HEAD@{177}: commit: ✨ Feat: HomePage.jsx에 로그인 버튼
+[33me3dd0fe[m HEAD@{178}: commit: 💄 Style: Confy 로고.svg 수정
+[33m33aa002[m HEAD@{179}: commit: 💄 Style: 홈화면 네비바 로고 크기 - 반응형 크기 조정
+[33m0b4a226[m HEAD@{180}: commit: ✨ Feat:홈화면_네비바,베너 생성
+[33mab5ae01[m HEAD@{181}: commit: 💄 Chore: Confy 로고 추가 (글씨VER_black,color)
+[33m60fb597[m HEAD@{182}: commit: 🔧 Chore : tailwind-@import "tailwindcss"; 세팅
+[33mba033a5[m HEAD@{183}: commit: 🔧 Chore: tailwind-@headlessui/react 설치
+[33mc9b6df7[m HEAD@{184}: checkout: moving from develop to feature/homepage
+[33mc9b6df7[m HEAD@{185}: pull origin develop: Fast-forward
+[33m0f76c48[m HEAD@{186}: pull origin develop: Fast-forward
+[33m1ade62e[m HEAD@{187}: checkout: moving from master to develop
+[33m126ad3b[m[33m ([m[1;32mmaster[m[33m)[m HEAD@{188}: pull origin develop: Merge made by the 'ort' strategy.
+[33m8d8ba2b[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{189}: pull origin master: Fast-forward
+[33m7be21ff[m HEAD@{190}: pull origin master: Fast-forward
+[33mb68a303[m HEAD@{191}: checkout: moving from Sub-Pjt1 to master
+[33m3eee617[m HEAD@{192}: pull origin Sub-Pjt1: Fast-forward
+[33mb68a303[m HEAD@{193}: checkout: moving from master to Sub-Pjt1
+[33mb68a303[m HEAD@{194}: checkout: moving from KangMyungJoo to master
