@@ -1,0 +1,8 @@
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12%;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}

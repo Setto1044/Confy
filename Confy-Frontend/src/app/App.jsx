@@ -1,17 +1,3 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import MainPage from "../pages/ConferencePage/MainPage";
-import MeetingPage from "../pages/ConferencePage/MeetingPage";
-
-function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<MainPage />} />
-        <Route path="/meeting" element={<MeetingPage />} />
-      </Routes>
-    </Router>
-  );
-}
-
-export default App;
+version https://git-lfs.github.com/spec/v1
+oid sha256:a6c7e0ac71fe1b3fb076e0ae9953f0b8cc57990903ac2d976accbb5ace3a5056
+size 545
