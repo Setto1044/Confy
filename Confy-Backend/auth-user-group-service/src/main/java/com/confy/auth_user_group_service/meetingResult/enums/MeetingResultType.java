@@ -1,22 +1,3 @@
-package com.confy.auth_user_group_service.meetingResult.enums;
-
-public enum MeetingResultType {
-    ALL("all"),
-    FAVORITE("favorite"),
-    GROUP("group");
-
-    private final String value;
-
-    MeetingResultType(String value) {
-        this.value = value;
-    }
-
-    public String getValue() {
-        return value;
-    }
-
-    @Override
-    public String toString() {
-        return value;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1afad78ab6a7de7588b7d6911027506a35cf0400282d2ae8066d7b4b239ce0c0
+size 831
