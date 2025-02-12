@@ -1,17 +1,19 @@
-package com.confy.dto.MMSToGPT;
+package com.confy.gpt_gateway_service.model.dto.request;
 
-import com.confy.dto.MMSToClient.SentenceDto;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.List;
-import java.util.Map;
 
-@Data
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
+@Data
 public class GptRequestDto {
     private Long meetingId;
     private List<SentenceDto> script;
+
+    public static GptRequestDto of(Long meetingId, List<SentenceDto> script) {
+        return new GptRequestDto(meetingId, script);
+    }
 }

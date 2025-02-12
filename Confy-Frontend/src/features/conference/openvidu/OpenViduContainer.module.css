@@ -1,20 +1,3 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100vh;
-}
-
-.mainContent {
-  flex: 1;
-  transition: margin-right 0.3s ease;
-  background-color: #ebebeb
-}
-
-.mainContentShifted {
-  margin-right: 340px;
-}
-
-.mainContentWithoutPanel {
-  margin-right: 0; /* 사이드바 패널의 너비만큼 마진 적용 */
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:75eaae6ef736410f417cef0c0639c4620a2ae5691f357bfefc5b2616e61d059c
+size 1968
