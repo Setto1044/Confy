@@ -14,17 +14,17 @@
 }
 
 .tab.active {
-  background-color: #f3f4f6;
+  background-color: rgba(233, 239, 255, 0.7);
 }
 
 .tab:hover {
-  background-color: #f3f4f6;
+  background-color: rgba(233, 239, 255, 0.7);
 }
 
 .leftOnly {
-  border-right: 1px solid #e5e7eb;
+  border-right: 1px solid rgba(233, 239, 255, 0.7);
 }
 
 .rightOnly {
-  border-left: 1px solid #e5e7eb;
+  border-left: 1px solid rgba(233, 239, 255, 0.7);
 }
