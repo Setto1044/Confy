@@ -1,18 +1,25 @@
 .container {
-    padding: 20px;
-    width: 300px;
-  }
-  
-  .title {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
+  padding: 12px;
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Pretendard;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
