@@ -1,5 +1,6 @@
 package com.confy.service.meeting.MMSToClient;
 
+import com.confy.dto.MMSToClient.MeetingExitDto;
 import com.confy.entity.Meeting;
 import com.confy.entity.UserMeeting;
 
@@ -9,7 +10,7 @@ import java.util.List;
 public interface UserMeetingService {
 
     UserMeeting saveUserMeeting(Meeting meeting, Long userId);
-    void exitMeeting(Long meetingId, Long userId);
+    MeetingExitDto exitMeeting(Long meetingId, Long userId);
     public List<String> getSpeakersByMeetingId(Long meetingId);
 
 }
