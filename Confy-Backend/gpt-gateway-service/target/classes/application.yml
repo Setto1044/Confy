@@ -15,5 +15,5 @@ spring:
 
 services:
   mms-service:
-    #uri: http://localhost:6080
-    uri: http://meeting-management-service:6080
+    uri: http://localhost:6080
+    # uri: http://meeting-management-service:6080
