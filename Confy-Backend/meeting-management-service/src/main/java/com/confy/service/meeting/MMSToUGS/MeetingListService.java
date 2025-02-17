@@ -1,8 +1,7 @@
 package com.confy.service.meeting.MMSToUGS;
 
-import com.confy.dto.MMSToClient.MeetingCreateRequestDto;
+import com.confy.dto.MMSToUGS.MeetingTimeResponseDto;
 import com.confy.entity.Meeting;
-import com.confy.repository.MeetingRepository;
 
 import java.util.List;
 
