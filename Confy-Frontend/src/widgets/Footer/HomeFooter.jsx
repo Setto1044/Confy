@@ -1,16 +1,3 @@
-import styles from "../Footer/HomeFooter.module.css";
-
-const HomeFooter = () => {
-  return (
-    <footer className={styles.HomeFooter}> {/* 변경된 부분 */}
-      <div className={styles.footerText}>
-        <p>SSAFY 12기 508조 Confy</p>
-        <p>팀장: 배석진</p>
-        <p>팀원: 강명주 김예진 노영단 신유영 예세림</p>
-        <p>&copy; 2025 Confy. All rights reserved.</p>
-      </div>
-    </footer>
-  );
-};
-
-export default HomeFooter;
+version https://git-lfs.github.com/spec/v1
+oid sha256:34d3532efb653a6579fb80c964d990892d5b5bb82ccdd2ddbe0cd157e2fa599a
+size 1166
