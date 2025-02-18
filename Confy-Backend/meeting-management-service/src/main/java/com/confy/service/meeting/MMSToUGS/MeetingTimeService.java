@@ -1,6 +1,8 @@
 package com.confy.service.meeting.MMSToUGS;
 
 import com.confy.dto.MMSToUGS.MeetingTimeResponseDto;
+
+import java.time.LocalDateTime;
 import java.util.List;
 
 public interface MeetingTimeService {
@@ -10,5 +12,5 @@ public interface MeetingTimeService {
      */
     List<MeetingTimeResponseDto> getMeetingsStartingInMinutes(int minutes);
 
-    List<MeetingTimeResponseDto> getAllScheduledMeetings();
+    List<MeetingTimeResponseDto> getScheduledMeetings(LocalDateTime now);
 }
