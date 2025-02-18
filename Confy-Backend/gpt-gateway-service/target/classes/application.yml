@@ -1,0 +1,19 @@
+server:
+  port: 8099
+
+spring:
+
+  application:
+    name: gpt-gateway-service
+
+  main:
+    allow-bean-definition-overriding: true
+
+  ai:
+    openai:
+      api-key: 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
+
+services:
+  mms-service:
+    uri: http://localhost:6080
+    # uri: http://meeting-management-service:6080
