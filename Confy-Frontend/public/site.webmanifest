@@ -1,0 +1,21 @@
+{
+  "name": "Confy 회의 요약",
+  "short_name": "Confy",
+  "description": "회의 내용을 실시간으로 요약하고 시각화하는 서비스",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4A9FFF",
+  "icons": [
+    {
+      "src": "/android-icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
