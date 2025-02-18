@@ -11,6 +11,6 @@ public interface UserMeetingService {
 
     UserMeeting saveUserMeeting(Meeting meeting, Long userId);
     MeetingExitDto exitMeeting(Long meetingId, Long userId);
-    public List<String> getSpeakersByMeetingId(Long meetingId);
+    List<String> getSpeakersByMeetingId(Long meetingId);
 
 }
