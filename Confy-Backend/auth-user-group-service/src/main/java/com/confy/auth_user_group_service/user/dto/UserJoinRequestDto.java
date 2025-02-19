@@ -1,14 +1,3 @@
-package com.confy.auth_user_group_service.user.dto;
-
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-public class UserJoinRequestDto {
-    private String email;
-    private String password;
-    private String fullName;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:24df47d17fb5a9afcffb7275205805504c7e4848ed51c734a46012592a528ab0
+size 781
