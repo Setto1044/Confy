@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4c2ed875129fbbe62d337af925818c0ab839b0034e0eb9a42d6bdb1c983fa602
-size 580
+package com.confy.auth_user_group_service.group.dto;
+
+import com.confy.auth_user_group_service.group.entity.UserGroup;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.List;
+
+@Data
+public class GroupInviteResponseDto {
+    private List<UserGroupDto> groupMembers;
+
+    private GroupInviteResponseDto(List<UserGroupDto> groupMembers) {
+        this.groupMembers = groupMembers;
+    }
+
+    public static GroupInviteResponseDto of(List<UserGroupDto> userGroups) {
+        return new GroupInviteResponseDto(userGroups);
+    }
+}

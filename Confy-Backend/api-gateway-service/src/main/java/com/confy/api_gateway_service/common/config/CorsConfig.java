@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:22635588247afd65fe58761b127047b9694de1f41b9e070df5fb6c085b13cf37
-size 1007
+package com.confy.api_gateway_service.common.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.cors.reactive.UrlBasedCorsConfigurationSource;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.reactive.CorsWebFilter;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+@Configuration
+public class CorsConfig {
+    @Bean
+    public CorsWebFilter corsWebFilter() {
+        CorsConfiguration corsConfig = new CorsConfiguration();
+
+        corsConfig.setAllowedOriginPatterns(Collections.singletonList("*"));
+
+        corsConfig.addAllowedMethod("*");
+        corsConfig.addAllowedHeader("*");
+        corsConfig.setAllowCredentials(true);
+
+        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+        source.registerCorsConfiguration("/**", corsConfig);
+
+        return new CorsWebFilter(source);
+    }
+}

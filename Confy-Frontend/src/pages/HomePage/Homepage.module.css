@@ -1,3 +1,56 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d186bc91be3874aff8a0b237bfc72710855ee7a4a2d0ffa908febe1393995209
-size 761
+.mainTitle {
+  animation: slideDown 1s ease-out;
+}
+
+.description {
+  animation: slideUp 1s ease-out 0.5s both;
+}
+
+.highlightedText {
+  animation: highlight 1.5s ease-out both;
+}
+
+.highlightedText1 {
+  animation-delay: 1s;
+}
+
+.highlightedText2 {
+  animation-delay: 1.3s;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes highlight {
+  from {
+    color: #4b5563;
+    transform: scale(1);
+  }
+  50% {
+    color: #2563eb;
+    transform: scale(1.05);
+  }
+  to {
+    color: #2563eb;
+    transform: scale(1);
+  }
+}

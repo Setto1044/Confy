@@ -1,3 +1,181 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ae80d054bd018a17b9f738365e9a32f6ac1a4e7cbf039c2b17da91b7a903f67a
-size 3337
+.galleryContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  overflow-y: auto; /* 스크롤 가능하도록 설정 */
+  height: 100%; /* AutoSizer에 맞춰서 높이 설정 */
+  align-items: flex-start; /* ✅ 높이가 늘어나지 않도록 설정 */
+  padding-bottom: 10rem;
+}
+
+.galleryContainer::-webkit-scrollbar {
+  width: 4px;
+}
+
+.galleryContainer::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.galleryContainer::-webkit-scrollbar-thumb {
+  background: #e2e2e2;
+  border-radius: 2px;
+}
+
+.galleryContainer::-webkit-scrollbar-thumb:hover {
+  background: #d1d5db;
+}
+
+.galleryWrapper {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: flex-start; /* ✅ 아이템 하나일 경우 왼쪽 정렬 */
+}
+
+.galleryItem {
+  flex: 0 1 calc(33.333% - 16px); /* gap 고려한 너비 계산 */
+  min-width: 250px; /* 최소 너비 설정 */
+  min-height: 280px; /* ✅ 최소 높이 설정하여 비정상적으로 커지는 현상 방지 */
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.imageContainer img {
+  height: 100%;
+}
+
+/* 반응형 처리 */
+@media (max-width: 1200px) {
+  .galleryItem {
+    flex: 0 0 calc(50% - 12px); /* 2컬럼으로 변경 */
+  }
+}
+
+@media (max-width: 768px) {
+  .galleryItem {
+    flex: 0 0 100%; /* 1컬럼으로 변경 */
+  }
+}
+
+.galleryItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  background: #ecf3ff;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  min-height: 180px; /* ✅ 최소 높이 설정하여 크기 일관성 유지 */
+}
+
+.meetingTitle {
+  white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+  overflow: hidden; /* 넘치는 텍스트 숨김 */
+  text-overflow: ellipsis; /* ... 표시 */
+  max-width: 300px; /* 최대 너비 설정 (필요에 따라 조정) */
+  display: block; /* 블록 요소로 설정 */
+}
+
+.thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 12px;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.icon:hover {
+  opacity: 1;
+}
+
+.icon.visible {
+  opacity: 1;
+}
+
+.meetingInfo {
+  padding: 16px;
+}
+
+.meetingTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.meetingDetails {
+  display: flex;
+  align-items: center;
+}
+
+.meetingDate {
+  color: #666;
+  font-size: 14px;
+  text-align: left;
+}
+
+.imagePlaceholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loadingSpinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.checkedBackground {
+  background-color: rgba(0, 123, 255, 0.05);
+}
