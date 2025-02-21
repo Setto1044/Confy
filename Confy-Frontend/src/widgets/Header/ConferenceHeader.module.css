@@ -1,0 +1,17 @@
+.ConferenceHeader {
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  height: 67.4844px;
+  padding: 8px 40px;
+}
+
+/* 가운데에 로고 배치 및 사이즈 지정 */
+.logo {
+  justify-self: center;
+  width: 120px;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
