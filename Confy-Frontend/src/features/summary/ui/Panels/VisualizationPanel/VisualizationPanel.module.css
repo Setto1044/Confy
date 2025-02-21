@@ -1,3 +1,91 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c8ec5fced3944311cb1f8a03ba1a6b40b365548f0d8a3e3534e75e21b00a24cb
-size 1578
+.container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  font-family: Pretendard;
+}
+
+.loaderWrapper {
+  display: flex;
+  flex: 1;
+  height: 70%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.content {
+  height: 100%;
+  overflow-y: auto;
+  padding: 3rem;
+  padding-bottom: 9rem;
+}
+
+.content::-webkit-scrollbar {
+  width: 4px;
+}
+
+.content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.content::-webkit-scrollbar-thumb {
+  background: #e2e2e2;
+  border-radius: 2px;
+}
+
+.content::-webkit-scrollbar-thumb:hover {
+  background: #d1d5db;
+}
+
+.flowWrapper {
+  width: 100%;
+  height: 500px;
+  min-height: 400px;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+}
+
+.downloadBtnContainer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000; /* React Flow보다 위로 배치 */
+  pointer-events: auto; /* 버튼 클릭 가능하도록 설정 */
+}
+
+.fixedButtonContainer {
+  position: fixed;
+  bottom: 20px; /* 화면 하단에서 20px 간격 */
+  right: 20px; /* 화면 오른쪽에서 20px 간격 */
+  z-index: 1000; /* 다른 UI 요소 위에 배치 */
+}
+
+.editButton {
+  background-color: #0060ff; /* 버튼 색상 */
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.editButton:hover {
+  background-color: #1a56d0;
+}
+
+.loadingText {
+  color: #6b7280;
+}
+
+.errorText {
+  color: #ef4444;
+}
+
+.emptyText {
+  color: #6b7280;
+  text-align: center;
+  margin-top: 2rem;
+}

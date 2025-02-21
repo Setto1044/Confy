@@ -1,3 +1,62 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:007e19424c8d274e5a6f7a5b8b0114dd66ccc2362c33d04decfda520ac32422a
-size 979
+.sidebar {
+  display: flex;
+  width: 240px;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  font-family: Pretendard;
+}
+
+.logo {
+  display: flex;
+  height: 9.6%;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  align-self: stretch;
+
+  border-bottom: 1px solid #eeeeee;
+}
+
+.logo img:first-child {
+  display: flex;
+  width: 148px;
+  height: 40px;
+  align-items: center;
+  gap: 13px;
+  cursor: pointer;
+}
+
+.logo img:last-child {
+  width: 12px;
+}
+
+.contentList {
+  display: flex;
+  height: 90.4%;
+  padding-top: 12px;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.buttonList {
+  height: 94%;
+  display: flex;
+  width: 246px;
+  padding: 12px 8px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addGroup {
+  display: flex;
+  width: 240px;
+  padding: 12px 20px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}

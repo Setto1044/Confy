@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9cfb043853c8b603f480bb70e996aef48a6127de30cc164b5bc1222352f3965c
-size 580
+package com.confy.service.meeting.MMSToGPT;
+import com.confy.dto.MMSToGPT.GptRequestDto;
+import com.confy.dto.MMSToGPT.GptResponseDto;
+import com.confy.dto.MMSToGPT.RealTimeRequestDto;
+import com.confy.dto.MMSToGPT.RealTimeResponseDto;
+import reactor.core.publisher.Mono;
+
+public interface GptService {
+
+    // 실시간 요청 처리
+    public Mono<RealTimeResponseDto> requestRealTimeSummary(RealTimeRequestDto requestDto, Long userId, Long meetingId);
+
+    // 회의 종료 후 요약 요청
+    public Mono<GptResponseDto> requestProcessFromGpt(GptRequestDto requestDto);
+
+}

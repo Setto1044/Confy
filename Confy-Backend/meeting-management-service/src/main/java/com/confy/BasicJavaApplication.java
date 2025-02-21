@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9e5883209ad770730ac382ed4773ee7032943b75ef31f1eff796336f1d544cfd
-size 552
+package com.confy;
+
+import jakarta.annotation.PostConstruct;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableAsync;
+
+import java.util.TimeZone;
+
+@SpringBootApplication
+@EnableAsync
+public class BasicJavaApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(BasicJavaApplication.class, args);
+	}
+
+	@PostConstruct
+	public void init() {
+		TimeZone.setDefault(TimeZone.getTimeZone("Asia/Seoul"));
+	}
+}
