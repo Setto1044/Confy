@@ -1,0 +1,30 @@
+.tabContainer {
+  display: flex;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: white;
+}
+
+.tab {
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  position: relative;
+}
+
+.tab.active {
+  background-color: rgba(233, 239, 255, 0.7);
+}
+
+.tab:hover {
+  background-color: rgba(233, 239, 255, 0.7);
+}
+
+.leftOnly {
+  border-right: 1px solid rgba(233, 239, 255, 0.7);
+}
+
+.rightOnly {
+  border-left: 1px solid rgba(233, 239, 255, 0.7);
+}
