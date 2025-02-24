@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f1457718fc16f482b45c612cd393b324da8e929b8837d91bb9eec29556091ba2
-size 766
+package com.confy.auth_user_group_s
+package com.confy.auth_user_group_service;
+
+import jakarta.annotation.PostConstruct;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.scheduling.annotation.EnableAsync;
+
+
+
+import java.util.TimeZone;
+@SpringBootApplication
+@EnableScheduling
+@EnableAsync
+public class AuthUserGroupServiceApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(AuthUserGroupServiceApplication.class, args);
+    }
+
+        @PostConstruct
+        public void init() {
+                TimeZone.setDefault(TimeZone.getTimeZone("Asia/Seoul"));
+        }
+}
