@@ -1,4 +1,3 @@
-package com.confy.auth_user_group_s
 package com.confy.auth_user_group_service;
 
 import jakarta.annotation.PostConstruct;
