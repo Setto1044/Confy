@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3783e8f5005335b949ca6889fc3b2f39c6f68622229c0589ac51a447af253239
-size 665
+import { createSlice } from "@reduxjs/toolkit";
+
+const initialState = {
+  meetingId: sessionStorage.getItem("meetingId") || "",
+  isConnected: false,
+};
+
+const startMeetingSlice = createSlice({
+  name: "meeting",
+  initialState,
+  reducers: {
+    setMeetingId: (state, action) => {
+      state.meetingId = action.payload;
+      sessionStorage.setItem("meetingId", action.payload);
+    },
+    clearMeetingId: (state) => {
+      state.meetingId = "";
+      sessionStorage.removeItem("meetingId");
+    },
+  },
+});
+
+// 액션과 리듀서 내보내기
+export const { setMeetingId, clearMeetingId } = startMeetingSlice.actions;
+export default startMeetingSlice.reducer;

@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d495347bf37499c017c79a253ff4458b754c109fe8f1be32f8e7421315c3f332
-size 911
+import { LocalVideoTrack, RemoteVideoTrack } from "livekit-client";
+import "./VideoComponent.css";
+import { useEffect, useRef } from "react";
+
+interface VideoComponentProps {
+    track: LocalVideoTrack | RemoteVideoTrack;
+    participantIdentity: string;
+    local?: boolean;
+}
+
+function VideoComponent({ track, participantIdentity, local = false }: VideoComponentProps) {
+    const videoElement = useRef<HTMLVideoElement | null>(null);
+
+    useEffect(() => {
+        if (videoElement.current) {
+            track.attach(videoElement.current);
+        }
+
+        return () => {
+            track.detach();
+        };
+    }, [track]);
+
+    return (
+        <div id={"camera-" + participantIdentity} className="video-container">
+            <div className="participant-data">
+                <p>{participantIdentity + (local ? " (You)" : "")}</p>
+            </div>
+            <video ref={videoElement} id={track.sid}></video>
+        </div>
+    );
+}
+
+export default VideoComponent;

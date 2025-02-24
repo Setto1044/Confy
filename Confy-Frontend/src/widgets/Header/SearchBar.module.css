@@ -1,3 +1,74 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9d936802e73f13ff09a6ebb1d7a74dab7e9659ba402b7ed338594baff3c5d640
-size 1287
+.searchBar {
+  display: flex;
+  width: 35%;
+  height: 40px;
+  padding: 0px 20px;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.searchBar:focus-within {
+  border-color: #2172f6;
+  transform: translateY(-1px);
+}
+
+.searchBar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  margin: -8px;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+}
+
+.searchBar button:hover {
+  background-color: rgba(102, 102, 102, 0.1);
+}
+
+.searchBar button:active {
+  background-color: rgba(102, 102, 102, 0.2);
+  transform: scale(0.95);
+}
+
+.searchBar button img {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  transition: all 0.2s ease-in-out;
+  opacity: 0.6;
+}
+
+.searchBar button:hover img {
+  opacity: 0.8;
+}
+
+.inputField {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 16px;
+  color: #666;
+  background: transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.inputField::placeholder {
+  color: #999;
+  transition: all 0.2s ease-in-out;
+}
+
+.inputField:focus::placeholder {
+  opacity: 0.7;
+  transform: translateX(2px);
+}
+
+/* 입력 중일 때 돋보기 아이콘 스타일 변경 */
+.searchBar:focus-within button img {
+  opacity: 0.8;
+}

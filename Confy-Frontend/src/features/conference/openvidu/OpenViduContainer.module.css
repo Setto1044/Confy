@@ -1,3 +1,221 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:605d55b79b5d041d2176177a9fc2d5cb69aa229a7b2e65834e54b22fd0355045
-size 3820
+#room {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  padding: 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+  transition: margin-right 0.3s ease;
+  position: relative;
+  overflow-y: auto;
+
+  font-family: Pretendard;
+}
+
+#room.shifted {
+  width: calc(100% - 420px);
+  margin-right: 420px;
+  transition: all 0.3s ease;
+}
+
+.videoGrid {
+  display: grid;
+  gap: 16px;
+  width: calc(100% - 420px);
+  height: calc(100vh - 80px);
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.videoGrid.shifted {
+  width: calc(100% - 420px);
+  margin-right: 420px;
+}
+
+.videoContainer {
+  position: relative;
+  background: #2d2d2d;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.videoContainer:hover .participant-controls {
+  opacity: 1;
+}
+
+.videoContainer video {
+  width: 100%;
+  object-fit: cover;
+}
+
+.videoComponent {
+  height: 50px;
+}
+
+/* 참가자 정보 스타일 */
+.participant-data {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  color: white;
+  padding: 6px 12px;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  border-radius: 6px;
+  z-index: 10;
+  transition: opacity 0.2s ease;
+}
+
+.participant-data p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* 비디오 참가자 컨트롤 */
+.participant-controls {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  gap: 8px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+/* 하단 컨트롤 바 */
+.control_bar {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: white;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 0 24px;
+  box-sizing: border-box;
+  border-top: 1px solid #e0e0e0;
+  transition: margin-right 0.3s ease;
+  z-index: 1000;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.control_bar.shifted {
+  width: calc(100% - 420px);
+  margin-right: 420px;
+}
+
+/* 버튼 스타일 */
+.blue_button {
+  background: #2172f6;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.blue_button:hover {
+  background: #1857d0;
+  transform: translateY(-1px);
+}
+
+.red_button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.red_button:hover {
+  background: #c82333;
+  transform: translateY(-1px);
+}
+
+/* 화자 감지 시 하이라이트 */
+.speaking {
+  box-shadow: 0 0 0 3px #2172f6, 0 4px 12px rgba(33, 114, 246, 0.2);
+  transform: scale(1.02);
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  #room {
+    padding: 12px;
+  }
+
+  .control_bar {
+    padding: 0 16px;
+    height: 70px;
+    gap: 12px;
+  }
+
+  .blue_button,
+  .red_button {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+}
+/* 반응형 디자인 적용 */
+@media screen and (max-width: 1200px) {
+  #room.shifted {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .videoGrid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .videoGrid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .control_bar {
+    padding: 0 16px;
+    height: 70px;
+    gap: 12px;
+  }
+
+  .blue_button,
+  .red_button {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .videoGrid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+}

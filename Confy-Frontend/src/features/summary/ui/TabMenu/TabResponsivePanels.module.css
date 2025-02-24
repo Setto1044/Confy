@@ -1,3 +1,75 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4c60b5b1c051673816053f6b204808bb9e23d33b0c1099a28157ab59ce889bbf
-size 1283
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+/* 모바일 뷰 */
+.mobileView {
+  height: 100%;
+  display: flex; /* block에서 flex로 변경 */
+  flex-direction: column; /* 세로 방향 정렬 */
+  padding-bottom: 2rem;
+}
+
+.panel {
+  width: 100%;
+  background-color: white;
+  flex: 1;
+}
+
+/* 데스크톱 뷰 */
+.desktopView {
+  display: none;
+  height: 100%;
+  padding-bottom: 2rem;
+}
+
+/* lg 브레이크포인트 (1024px) 이상에서 적용 */
+@media (min-width: 1024px) {
+  .container {
+    display: flex;
+    height: 100%;
+    bottom: 2rem;
+  }
+
+  .mobileView {
+    display: none;
+  }
+
+  .desktopView {
+    display: flex;
+    width: 100%;
+    height: 100%; /* 명시적으로 높이 설정 */
+    position: relative;
+  }
+
+  .leftPanel,
+  .rightPanel {
+    width: 50%;
+    height: 100%; /* 명시적으로 높이 설정 */
+    display: flex; /* 추가 */
+    flex-direction: column; /* 추가 */
+  }
+
+  /* 구분선 스타일 */
+  .desktopView::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 2rem;
+    width: 1px;
+    background-color: rgba(233, 239, 255, 0.7);
+  }
+
+  /* 좌우 패널 간격 조정 */
+  .leftPanel {
+    padding-right: 1px;
+  }
+
+  .rightPanel {
+    padding-left: 1px;
+  }
+}

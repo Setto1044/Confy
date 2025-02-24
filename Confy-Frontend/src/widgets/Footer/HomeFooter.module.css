@@ -1,3 +1,91 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a5d222f128c5a00b3895aaa1ad00142b13f48c00a9fbaa1e1ea1a116ac0e1760
-size 1263
+.HomeFooter {
+  display: flex;
+  justify-content: center;
+  padding: 64px 24px;
+  background: #ffffff;
+  font-family: "Inter", Arial, sans-serif;
+  border-top: 1px solid #eaeaea;
+}
+
+.footerContent {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.footerLogo {
+  grid-column: 1;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.footerInfo {
+  grid-column: 2 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.teamSection {
+  grid-column: 1 / -1;
+  margin-bottom: 48px;
+}
+
+.teamSection h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #111;
+  margin: 0 0 12px 0;
+}
+
+.teamMembers {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.teamMembers p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.teamMembers span {
+  font-weight: 500;
+  color: #444;
+  margin-right: 8px;
+}
+
+.copyright {
+  grid-column: 1 / -1;
+  font-size: 12px;
+  color: #888;
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .footerContent {
+    grid-template-columns: 1fr;
+  }
+
+  .footerInfo {
+    grid-column: 1;
+    grid-template-columns: 1fr;
+  }
+
+  .HomeFooter {
+    padding: 40px 24px;
+  }
+}

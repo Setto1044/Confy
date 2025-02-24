@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8b635bbb0f15ea7e2ea06ac879e3cfc77a73d99e3fb9e4336bcd8c6ab646ba23
-size 520
+package com.confy.service.redis;
+
+import com.confy.dto.MMSToClient.SentenceDto;
+import com.confy.vo.SentenceVo;
+
+import java.util.List;
+
+public interface RedisService {
+    // 한 회의에 대한 전체 스크립트 조회
+    List<SentenceDto> getScript(Long meetingId);
+
+    // 한 회의에 대한 특정 시간대의 스크립트 조회
+    List<SentenceVo> getSentencesByTime(Long meetingId, String start, String end);
+
+    // 회의 데이터 저장
+    void addSentence(Long meetingId, SentenceVo sentenceVo);
+}

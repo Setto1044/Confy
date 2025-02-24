@@ -1,3 +1,43 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e0e0bf36a48b98caf48bd35d3fdf25e0460737d72b37cbd1af38c98556f03937
-size 652
+.groupMemberItem {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  padding: 4px 12px;
+}
+
+.member {
+  display: flex;
+  width: 432px;
+
+  gap: 10%;
+}
+
+.member img {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+  border: 1px solid #ccc;
+  border-radius: 100px;
+}
+
+.member {
+  color: #666;
+  font-family: Pretendard;
+}
+
+.email {
+  color: #666;
+  font-family: Pretendard;
+  font-size: 12px;
+  line-height: normal;
+}
+
+/* className={`text-sm font-semibold ${
+  role === "Admin" ? "text-blue-600" : "text-gray-600"
+}`} */

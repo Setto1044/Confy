@@ -1,3 +1,92 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cdda13cc0f2469a6a64ab1477ee2d26f08fb0c70e50050fb7aeed49d2be88d90
-size 1703
+.container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  overflow: hidden;
+  font-family: Pretendard;
+}
+
+.content {
+  flex: 1;
+  min-height: 0;
+  padding-bottom: 9rem; /* 버튼을 위한 공간 확보 */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.summaryWrapper {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 3rem;
+  height: 100%;
+  max-height: calc(100vh - 9rem);
+  padding-bottom: 5rem;
+  position: relative;
+}
+
+/* 🔹 스크롤할 내용이 있으면 위/아래 흐리게 표시 */
+.summaryWrapper::before,
+.summaryWrapper::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* 🔹 스크롤 이벤트에 따라 흐림 효과 조정 */
+.scrolledTop::before {
+  opacity: 1;
+}
+
+.scrolledBottom::after {
+  opacity: 0;
+}
+
+/* 마지막 요소가 너무 끝에 붙지 않도록 추가 여백 */
+.summaryWrapper > *:last-child {
+  margin-bottom: 3rem;
+}
+
+/* 스크롤바 스타일 */
+.summaryWrapper::-webkit-scrollbar {
+  width: 4px;
+}
+
+.summaryWrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.summaryWrapper::-webkit-scrollbar-thumb {
+  background: #e2e2e2;
+  border-radius: 2px;
+}
+
+.summaryWrapper::-webkit-scrollbar-thumb:hover {
+  background: #d1d5db;
+}
+
+.fixedButtonContainer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.editButton {
+  background-color: #0060ff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.editButton:hover {
+  background-color: #1a56d0;
+}

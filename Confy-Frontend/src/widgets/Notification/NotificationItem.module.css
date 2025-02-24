@@ -1,3 +1,47 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cd523afa2cc27759f49e7f8c7bd6728017b612ef4fc040165eab9d200d40edac
-size 753
+.notificationItem {
+  display: flex;
+  height: 76px;
+  padding: 2px 16px;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+  align-self: stretch;
+
+  border-bottom: 0.8px solid #ccc;
+  background: #fff;
+}
+
+.profileImg {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.notification {
+  color: #666;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.time {
+  color: #666;
+  font-family: Pretendard;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
