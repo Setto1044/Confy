@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ab6eb886b7c98eb1423a5386da8f43ed64eb1fcc2655ce80945b2dbf5136c43b
-size 784
+package com.confy.dto.MMSToUGS;
+
+import com.confy.entity.Meeting;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class MeetingListResponseDto {
+    Long id;
+    String meetingName;
+    String meetingUUID;
+    String startedAt;
+    Long groupId;
+    String textSummary;
+    String summaryImagePath;
+
+    public static MeetingListResponseDto of(Long id, String meetingName, String meetingUUID,
+                                            String startedAt, Long groupId, String textSummary,
+                                            String summaryImagePath) {
+        return new MeetingListResponseDto(id, meetingName, meetingUUID, startedAt, groupId, textSummary, summaryImagePath);
+    }
+}

@@ -1,3 +1,98 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8fb96bd7182c18c4f8094937772672799a7d9b653fc06da71f19cc116b03849c
-size 1790
+#version: '3.8'
+services:
+  mysql-container:
+    image: mysql:8.0
+    container_name: mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: '0000'
+      MYSQL_DATABASE: confyDB
+      MYSQL_ROOT_HOST: '%'
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+    network_mode: host
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+
+  redis-container:
+    image: redis:latest
+    container_name: redis-container
+    ports:
+      - "6379:6379"
+    network_mode: host
+
+  api-gateway-service:
+    build:
+      context: ./Confy-Backend/api-gateway-service
+      dockerfile: Dockerfile
+    container_name: api-gateway-service
+    ports:
+      - "8081:8081"
+    depends_on:
+      - auth-user-group-service
+    network_mode: host
+
+  auth-user-group-service:
+    build:
+      context: ./Confy-Backend/auth-user-group-service
+      dockerfile: Dockerfile
+    container_name: auth-user-group-service
+    environment:
+      - SERVER_PORT=8082
+    ports:
+      - "8082:8082"
+    volumes:
+      - /home/ubuntu/app/images:/app/images #image-data:/app/images
+    depends_on:
+      mysql-container:
+        condition: service_healthy
+    network_mode: host
+
+  meeting-management-service:
+    build:
+      context: ./Confy-Backend/meeting-management-service
+      dockerfile: Dockerfile
+    container_name: meeting-management-service
+    environment:
+      - SERVER_PORT=6080
+    ports:
+      - "6081:6080"
+    volumes:
+      - image-data:/app/images
+    depends_on:
+      mysql-container:
+        condition: service_healthy
+    network_mode: host
+
+  gpt-gateway-service:
+    build:
+      context: ./Confy-Backend/gpt-gateway-service
+      dockerfile: Dockerfile
+    container_name: gpt-gateway-service
+    environment:
+      - SERVER_PORT=8099
+    ports:
+      - "8099:8099"
+    volumes:
+      - image-data:/app/images
+    depends_on:
+      - meeting-management-service
+    network_mode: host
+
+  react-container:
+    build:
+      context: ./Confy-Frontend
+      dockerfile: Dockerfile
+    container_name: react-container
+    ports:
+      - "5080:5080"
+    network_mode: host
+
+volumes:
+  mysql-data:
+  image-data:

@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+const STATIC_IMAGE_URL = import.meta.env.VITE_STATIC_IMAGE_URL;
 
 const authSlice = createSlice({
   name: "auth",
@@ -8,7 +9,13 @@ const authSlice = createSlice({
   },
   reducers: {
     login: (state, action) => {
-      state.user = action.payload;
+      const profileUrl = action.payload.profileUrl
+        ? action.payload.profileUrl.startsWith("http")
+          ? action.payload.profileUrl
+          : `${STATIC_IMAGE_URL}${action.payload.profileUrl}`
+        : null;
+
+      state.user = { ...action.payload, profileUrl };
       state.isAuthenticated = true;
     },
     logout: (state) => {

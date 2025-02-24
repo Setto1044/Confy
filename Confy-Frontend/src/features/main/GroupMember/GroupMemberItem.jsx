@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d8b0101cb01e4f5152c077d71159e10980a15686fb16ee3dc8888f971d8cff9c
-size 625
+import React from "react";
+import styles from "../GroupMember/GroupMemberItem.module.css";
+
+function GroupMemberItem({ name, email, role, profileImg }) {
+  const defaultProfileImage = "/assets/images/default-profile.png";
+  const handleImageError = (event) => {
+    event.target.onerror = null;
+    event.target.src = defaultProfileImage;
+  };
+
+  return (
+    <div className={styles.groupMemberItem}>
+      <div className={styles.member}>
+        <img
+          src={profileImg || "https://via.placeholder.com/50"} // 기본 이미지 추가
+          alt="Profile"
+          className={styles.profileImg}
+          onError={handleImageError}
+        />
+        <div>
+          <div>{name}</div>
+          <div className={styles.email}>{email}</div>
+        </div>
+      </div>
+      <div>{role}</div>
+    </div>
+  );
+}
+
+export default GroupMemberItem;

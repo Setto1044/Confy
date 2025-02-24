@@ -1,0 +1,47 @@
+.notificationItem {
+  display: flex;
+  height: 76px;
+  padding: 2px 16px;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+  align-self: stretch;
+
+  border-bottom: 0.8px solid #ccc;
+  background: #fff;
+}
+
+.profileImg {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.notification {
+  color: #666;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.time {
+  color: #666;
+  font-family: Pretendard;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

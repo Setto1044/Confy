@@ -1,3 +1,101 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:918773b610cdb1a9177c4dea1f58ad872db9d1d907e5fb3383bea8c716d75b30
-size 2073
+.buttonWrapper {
+  position: relative;
+  width: 230px;
+}
+
+.sidebarButton {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  padding: 0px 20px;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+}
+
+.mainIcon {
+  width: 20px;
+  height: 20px;
+  transition: all 0.2s ease;
+}
+
+.moreIconWrapper {
+  position: absolute;
+  right: 12px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.moreIconWrapper:hover {
+  background: rgba(
+    51,
+    51,
+    51,
+    0.1
+  ); /* Changed to match the #333 theme with opacity */
+}
+
+.moreIcon {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.buttonWrapper:hover .moreIconWrapper {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sidebarButton:hover {
+  border-radius: 8px;
+  background: rgba(233, 239, 255, 0.5); /* 연한 파란색 배경 */
+  /* transform: translateX(4px); */
+  box-shadow: 0 2px 8px rgba(33, 114, 246, 0.1);
+}
+
+.sidebarButton:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    #4b8ef7,
+    /* 밝은 파란색 */ #2172f6 /* 메인 파란색 */
+  );
+  border-radius: 2px;
+}
+
+.sidebarButton:hover .mainIcon {
+  transform: scale(1.1);
+}
+
+.sidebarButton.active {
+  background: rgba(233, 239, 255, 0.7); /* 진한 연한 파란색 배경 */
+  border-radius: 8px;
+}
+
+.sidebarButton.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    #2172f6,
+    /* 메인 파란색 */ #4b8ef7 /* 밝은 파란색 */
+  );
+  border-radius: 2px;
+}

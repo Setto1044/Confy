@@ -23,9 +23,29 @@
 
 .groupMemberItem {
   display: flex;
-  width: 600px;
+  width: 608px;
 
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
+
+  overflow-y: auto;
+}
+
+/* 스크롤바 스타일 추가 */
+.groupMemberItem::-webkit-scrollbar {
+  width: 4px;
+}
+
+.groupMemberItem::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.groupMemberItem::-webkit-scrollbar-thumb {
+  background: #e2e2e2;
+  border-radius: 2px;
+}
+
+.groupMemberItem::-webkit-scrollbar-thumb:hover {
+  background: #d1d5db;
 }

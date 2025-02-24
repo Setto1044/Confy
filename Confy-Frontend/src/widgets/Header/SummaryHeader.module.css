@@ -1,3 +1,88 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6f7d4fd9196150556b45e9b5386a59e60d0e6bcf21cbcf4b99e7f05622c09e2b
-size 621
+.mainHeader {
+  display: flex;
+  height: 9.6%;
+  padding: 8px 40px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  align-self: stretch;
+  position: relative; /* 추가 */
+}
+
+.logoSection {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.searchbar {
+  visibility: hidden;
+}
+
+.icon {
+  display: flex;
+  height: 60px;
+  padding: 7px 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  position: absolute; /* 추가 */
+  right: 40px; /* 추가 */
+}
+
+.icon button {
+  position: relative;
+  padding: 8px;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.icon button:hover {
+  background: rgba(102, 102, 102, 0.1);
+  transform: translateY(-1px);
+}
+
+.icon button:active {
+  transform: translateY(1px);
+  background: rgba(102, 102, 102, 0.2);
+}
+
+.icon button img {
+  width: 24px;
+  height: 24px;
+  color: #666666;
+  transition: all 0.2s ease-in-out;
+}
+
+.icon button:hover img {
+  color: #333333;
+  filter: brightness(0.8);
+}
+
+.profileImg {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid transparent;
+
+  border: 1px solid #ccc;
+}
+
+.profileImg:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border: 2px solid #ffffff;
+}
+
+.profileImg:active {
+  transform: scale(0.95);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}

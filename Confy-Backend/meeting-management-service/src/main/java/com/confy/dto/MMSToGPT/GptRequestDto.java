@@ -1,5 +1,6 @@
 package com.confy.dto.MMSToGPT;
 
+import com.confy.dto.MMSToClient.SentenceDto;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,6 +13,5 @@ import java.util.Map;
 @NoArgsConstructor
 public class GptRequestDto {
     private Long meetingId;
-    private List<Map<String, Object>> script;
-
+    private List<SentenceDto> script;
 }
