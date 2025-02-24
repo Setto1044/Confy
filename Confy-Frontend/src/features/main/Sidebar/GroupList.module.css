@@ -1,3 +1,75 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:da48339a7e47b7287b203bb1fb4b8296d9b5acb075ed6d42e3674b338d8292d0
-size 817
+.groupList {
+  display: flex;
+  /* width: 246px; */
+
+  flex-direction: column;
+  align-items: center;
+}
+
+.groupListBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-height: 444px;
+  overflow-y: auto;
+}
+
+/* 스크롤바 스타일 추가 */
+.groupListBox::-webkit-scrollbar {
+  width: 0px;
+}
+
+.groupListBox::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.addGroup {
+  display: flex;
+  width: 240px;
+  padding: 12px 20px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.groupItem {
+  display: flex;
+  width: 230px;
+  height: 50px;
+  padding: 0px 20px;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.groupItem:hover {
+  border-radius: 8px;
+  background: #e5e7eb;
+}
+
+.addGroup-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.inputField {
+  display: flex;
+  width: 150px;
+  height: 36px;
+  padding: 6px 10px;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+
+  border-radius: 8px;
+}
+
+.inputField:focus {
+  outline: none;
+  border: 1px solid #2172f6;
+  background: #fff;
+}

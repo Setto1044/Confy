@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4853d1fe529e6085d7bba21735f10c792b4e311d9681864c00bc1926fa04b2e1
-size 699
+import { useNavigate, Link } from "react-router-dom";
+import LogoBlack from "../../assets/svgs/full-logo-black.svg";
+import styles from "../Header/LoginHeader.module.css";
+
+const navigation = [
+  { name: "사용자 가이드", href: "#", current: false },
+  { name: "자주 묻는 질문", href: "#", current: false },
+];
+
+function classNames(...classes) {
+  return classes.filter(Boolean).join(" ");
+}
+
+const LoginHeader = () => {
+  const navigate = useNavigate();
+
+  return (
+    <div className={styles.loginHeader}>
+      {/* Logo */}
+      <div className={styles.logo}>
+        <Link to="/">
+          <img src={LogoBlack} alt="Confy Logo_black" />
+        </Link>
+      </div>
+    </div>
+  );
+};
+
+export default LoginHeader;

@@ -1,0 +1,349 @@
+.main {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  flex: 1 0 0;
+  font-family: Pretendard;
+}
+
+.mainTitle {
+  display: flex;
+  padding: 14px 16px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  color: #333;
+  font-family: Pretendard;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.mainList {
+  display: flex;
+  width: 627px;
+  height: 288px;
+  padding: 0px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.mainListTitle {
+  display: flex;
+  width: 100px;
+  height: 40px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  color: #333;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.mainListProfile {
+  display: flex;
+  height: 124px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+  flex-shrink: 0;
+  align-self: stretch;
+  border-bottom: 1px solid #ccc;
+  color: #333;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.mainListProfile div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.mainListProfile div img {
+  display: flex;
+  width: 72px;
+  height: 72px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 8px;
+}
+
+.maintListItem {
+  display: flex;
+  height: 62px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  align-self: stretch;
+  border-bottom: 0.8px solid #ccc;
+  background: #fff;
+}
+
+.maintListItem label {
+  display: flex;
+  width: 120px;
+  align-items: center;
+}
+
+.maintListItem input {
+  display: flex;
+  width: 287px;
+  height: 30px;
+  padding: 0px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 6px;
+  border: 0.8px solid #f8f8fa;
+  background: rgba(233, 239, 255, 0.7);
+  color: #666;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.maintListItem input:hover {
+  background: #e5eeff;
+  border-color: #e5eeff;
+  box-shadow: 0 2px 4px rgba(33, 114, 246, 0.1);
+}
+
+.maintListItem input:focus {
+  outline: none;
+  background: #ffffff;
+  border-color: #2172f6;
+}
+
+.maintListItem input:focus::placeholder {
+  color: #a8a8a8;
+}
+
+.maintListItem input:active {
+  background: #ffffff;
+  border-color: #155cc0;
+}
+
+.mainListButton {
+  display: flex;
+  width: 118px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.mainListButton button {
+  display: flex;
+  height: 30px;
+  padding: 0px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 6px;
+
+  background: #2172f6;
+  color: #fff;
+  font-family: Pretendard;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.subtext {
+  color: #666;
+  font-family: Pretendard;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.alarm {
+  display: flex;
+  height: 78px;
+  padding-right: 20px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 8px 0;
+  border-bottom: 1px solid #ccc;
+  margin-top: 12px;
+}
+
+.content label {
+  font-weight: bold;
+  color: #333;
+}
+
+.content span {
+  color: #666;
+}
+
+.content a {
+  color: #2172f6;
+  text-decoration: none;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+.aside {
+  display: flex;
+  width: 197px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  border-right: 1px solid #ccc;
+  /* background: #f8f8fa; */
+  font-family: Pretendard;
+
+  border-radius: 8px;
+}
+
+.asideProfile {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  border-bottom: 1px solid #ccc;
+}
+
+.asideProfile img {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 8px;
+}
+
+.asideProfileInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 6px;
+  color: #333;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 120px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.asideProfileInfo div {
+  font-size: min(14px, 3vw);
+  max-width: 100%;
+}
+
+.asideNav {
+  display: flex;
+  height: 422px;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+
+.asideNavTitle {
+  display: flex;
+  width: 192px;
+  padding: 10px 16px;
+  align-items: center;
+  gap: 8px;
+  color: #000;
+  font-family: Pretendard;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.asideNavItemList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  align-self: stretch;
+
+  color: #666;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.asideNavItem {
+  display: flex;
+  width: 184px;
+  height: 29px;
+  padding-left: 12px;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.asideNavItem:hover {
+  border-radius: 8px;
+  background: rgba(233, 239, 255, 0.7);
+  transform: translateX(4px);
+  box-shadow: 0 2px 8px rgba(145, 221, 207, 0.1);
+}
+
+.asideNavItem[data-active="true"] {
+  background: rgba(233, 239, 255, 0.7);
+  border-radius: 8px;
+  box-shadow: inset 0 2px 4px rgba(145, 221, 207, 0.1);
+}
+
+/* 클릭 효과를 위한 스타일 */
+.asideNavItem:active {
+  background-color: #d5d5d5;
+}
+
+.logout {
+  display: flex;
+  height: 36px;
+  padding-left: 4px;
+  align-items: center;
+  flex-shrink: 0;
+  align-self: stretch;
+  border-top: 1px solid #ccc;
+  color: #2172f6;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}

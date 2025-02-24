@@ -1,3 +1,219 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7c85a857e22de8ae22f8b22e3003c9437234f75a0ccaa4f6d47f5ebbfac99e1a
-size 3727
+.leftbar {
+  display: flex;
+  width: 357px;
+  height: 100vh;
+  padding-top: 20px;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  font-family: Pretendard;
+}
+
+/* 기존 스타일은 유지하고, react-calendar 관련 스타일을 다음과 같이 수정합니다 */
+
+.calendarEvent :global(.react-calendar) {
+  width: 320px;
+  border: none;
+  background: white;
+  font-family: Pretendard;
+}
+
+/* 날짜 타일 스타일 */
+.calendarEvent :global(.react-calendar__tile) {
+  padding: 8px 6.6667px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 현재 날짜 스타일 */
+.calendarEvent :global(.react-calendar__tile--now) {
+  background: transparent;
+  color: #333;
+  font-weight: normal;
+}
+
+/* 선택된 날짜 스타일 */
+.calendarEvent :global(.react-calendar__tile--active) {
+  background: rgba(233, 239, 255, 0.7) !important;
+  color: #333;
+  border-radius: 8px;
+}
+
+/* hover 상태 스타일 */
+.calendarEvent :global(.react-calendar__tile:enabled:hover),
+.calendarEvent :global(.react-calendar__tile:enabled:focus) {
+  background: #f8f8fa;
+  border-radius: 8px;
+}
+
+/* 요일 헤더 스타일 */
+.calendarEvent :global(.react-calendar__month-view__weekdays) {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Pretendard;
+}
+
+.calendarEvent :global(.react-calendar__month-view__weekdays__weekday abbr) {
+  text-decoration: none; /* 밑줄 제거 */
+  font-family: Pretendard;
+}
+
+.calendarEvent :global(.react-calendar__month-view__weekdays__weekday) {
+  color: #666;
+}
+
+/* 주말 날짜 색상 */
+.calendarEvent :global(.react-calendar__month-view__days__day--weekend) {
+  color: #666;
+}
+
+/* 이전/다음 달 날짜 색상 */
+.calendarEvent
+  :global(.react-calendar__month-view__days__day--neighboringMonth) {
+  color: #ddd;
+}
+
+/* 점(dot) 스타일 */
+.dotContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6px;
+  margin-top: 2px;
+}
+
+.dot {
+  height: 4px;
+  width: 4px;
+  background-color: #2172f6;
+  border-radius: 50%;
+}
+
+/* 선택된 날짜의 점 색상 */
+.calendarEvent :global(.react-calendar__tile--active) .dot {
+  background-color: #2172f6;
+}
+
+.calendar {
+  display: flex;
+  width: 320px;
+  height: 845px;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.calendarList {
+  display: flex;
+  width: 320px;
+  max-height: 360px;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  overflow-y: auto;
+}
+
+/* 스크롤바 스타일 추가 */
+.calendarList::-webkit-scrollbar {
+  width: 0px;
+}
+
+.calendarList::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.calendarEvent {
+  width: 320px;
+}
+
+.monthSelector {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.monthSelectorDate {
+  display: flex;
+  width: 200px;
+  height: 46px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  padding-left: 8px;
+
+  color: var(--Light-Primary, #333);
+  font-family: Pretendard;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.arrow {
+  display: flex;
+  width: 50px;
+  height: 18.277px;
+
+  padding-right: 8px;
+  align-items: center;
+  gap: 12.362px;
+  flex-shrink: 0;
+}
+
+.arrow button img {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.calendarEvent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.meetingDate {
+  display: flex;
+  width: 300px;
+  height: 46px;
+  justify-content: space-between;
+  align-items: center;
+
+  color: var(--Light-Primary, #333);
+  font-family: Pretendard;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.meetingTime {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.meetingTime img {
+  width: 16px;
+}
+
+.event {
+  display: flex;
+  width: 313px;
+  padding: 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6.181px;
+
+  border-radius: 8px;
+  border: 1px solid rgba(233, 239, 255, 0.7);
+  background: rgba(233, 239, 255, 0.7);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.07);
+}
