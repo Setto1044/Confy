@@ -9,9 +9,9 @@ spring:
   main:
     allow-bean-definition-overriding: true
 
-  ai:
-    openai:
-      api-key:
+  # ai:
+    # openai:
+      # api-key: 
 
 services:
   mms-service:
