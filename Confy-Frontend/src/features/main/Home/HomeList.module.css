@@ -1,3 +1,288 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dea969305202f3a83a96c99ceed165f85cd63e8159d4b0b101d9d5864320de79
-size 3986
+.homeList {
+  display: flex;
+  flex-grow: 1;
+  /* padding: 20px 40px 0px 40px; */
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  font-family: Pretendard;
+  animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 배너 영역 */
+.homeBanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  /* max-width: 1200px; */
+  /* background-color: #f8f8fa; */
+}
+
+/* 텍스트 컨테이너 */
+.textContainer {
+  max-width: 50%;
+  animation: slideFromLeft 1s ease-out;
+}
+
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.textContainer h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: #2172f6;
+  position: relative;
+  display: inline-block;
+}
+
+.highlight::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #2172f6;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: right;
+}
+
+.highlight:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.strongText {
+  color: #246bfd;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.strongText:hover {
+  text-shadow: 0 0 8px rgba(36, 107, 253, 0.3);
+}
+
+/* 버튼 그룹 */
+.buttonGroup {
+  margin-top: 1.5rem;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+.primaryButton,
+.secondaryButton {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.primaryButton {
+  background-color: #2172f6;
+  color: white;
+  margin-right: 1rem;
+  box-shadow: 0 4px 6px rgba(36, 107, 253, 0.1);
+}
+
+.primaryButton:hover {
+  background-color: #1a56d0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(36, 107, 253, 0.2);
+}
+
+.secondaryButton {
+  background-color: transparent;
+  color: #2172f6;
+  border: 2px solid #2172f6;
+  position: relative;
+  z-index: 1;
+}
+
+.secondaryButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #2172f6;
+  transition: width 0.3s ease;
+  z-index: -1;
+}
+
+.secondaryButton:hover::before {
+  width: 100%;
+}
+
+.secondaryButton:hover {
+  color: white;
+}
+
+/* 이미지 컨테이너 */
+.imageContainer {
+  animation: floatingAnimation 3s ease-in-out infinite;
+}
+
+@keyframes floatingAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.imageContainer img {
+  max-width: 100%;
+  height: auto;
+  max-height: 480px;
+  transition: transform 0.3s ease;
+}
+
+/* 예약된 회의 박스 */
+.scheduledMeeting {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+  padding: 1rem 3.5rem;
+  transition: all 0.3s ease;
+}
+
+.scheduledMeetingTitle {
+  display: flex;
+  gap: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.scheduledMeetingList {
+  /* background-color: rgba(233, 239, 255, 0.7); */
+  padding: 12px 20px 120px 20px;
+  margin-bottom: 20px;
+  gap: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.scheduledMeetingList::-webkit-scrollbar {
+  width: 4px;
+}
+
+.scheduledMeetingList::-webkit-scrollbar-track {
+  border-radius: 4px;
+}
+
+.scheduledMeetingList::-webkit-scrollbar-thumb {
+  background: #e2e2e2;
+  border-radius: 2px;
+}
+
+.scheduledMeetingList::-webkit-scrollbar-thumb:hover {
+  background: #d1d5db;
+}
+
+.scheduledMeetingList div {
+  padding: 12px;
+  border-bottom: 1px solid #ccc;
+}
+
+.scheduledMeetingListTitle {
+  color: #333;
+  font-family: Pretendard;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.scheduledMeetingListTime {
+  color: #666;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.scheduledMeetingTitle img {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* 반응형 */
+@media (max-width: 1024px) {
+  .homeBanner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .textContainer {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .imageContainer img {
+    max-width: 80%;
+  }
+
+  .scheduledMeeting {
+    width: 90%;
+    margin: 3rem auto 0;
+  }
+}

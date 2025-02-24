@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0fb9d3bc51b3dfc5173c8a2c112811802208a3f3e1e4b9217b05fbbb95167acc
-size 832
+package com.confy.auth_user_group_service.common.config;
+
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+@Slf4j
+@Configuration
+public class WebConfig implements WebMvcConfigurer {
+
+    @Value("${file.upload.directory}")
+    private String uploadDirectory;
+
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        log.info(">> 이미지 조회 요청: {}", registry.toString());
+        registry.addResourceHandler("/api/images/**")
+                .addResourceLocations("file:" + uploadDirectory + "/"); // "file:" 추가
+    }
+}
