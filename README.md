@@ -2,8 +2,12 @@
 ---
 ## SSAFY 12기 508
 ---
+## Description
+Confy는 실시간 회의 요약 및 시각화를 제공하는 서비스입니다. 
+WebRTC를 기반으로 화상회의 기능을 지원하며, STT를 활용한 회의 자동 요약을 제공합니다. 
+---
 ## 영상 포트폴리오
-[![Watch the video](https://img.youtube.com/vi/LS8G4rlMbOE/maxresdefault.jpg)](https://youtu.be/LS8G4rlMbOE)
+[![Watch the video](images/thumbnail.png)](https://youtu.be/LS8G4rlMbOE)
 ---
 ### 멤버
 - 강명주
