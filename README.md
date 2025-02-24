@@ -1,6 +1,10 @@
 # Confy
 ---
 ## SSAFY 12기 508
+---
+## 영상 포트폴리오
+[![Watch the video](https://img.youtube.com/vi/LS8G4rlMbOE/maxresdefault.jpg)](https://youtu.be/LS8G4rlMbOE)
+---
 ### 멤버
 - 강명주
 - 김예진
