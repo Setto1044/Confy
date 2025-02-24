@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a4993cd489889eb326e77523ad15e593d85257b053d35a841aaf785c52da3a87
-size 566
+import { LocalAudioTrack, RemoteAudioTrack } from "livekit-client";
+import { useEffect, useRef } from "react";
+
+interface AudioComponentProps {
+  track: LocalAudioTrack | RemoteAudioTrack;
+}
+
+function AudioComponent({ track }: AudioComponentProps) {
+  const audioElement = useRef<HTMLAudioElement | null>(null);
+
+  useEffect(() => {
+    if (audioElement.current) {
+      track.attach(audioElement.current);
+    }
+
+    return () => {
+      track.detach();
+    };
+  }, [track]);
+
+  return <audio ref={audioElement} id={track.sid} />;
+}
+
+export default AudioComponent;

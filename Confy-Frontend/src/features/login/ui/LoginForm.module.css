@@ -1,3 +1,165 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3d9a4aa6a98e7ecf7dafd9edee91ff75f3082de464800bb0e30c34f5d2a46434
-size 2693
+.formWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+  align-self: stretch;
+  font-family: Pretendard;
+}
+
+.imageContainer {
+  display: flex;
+  align-items: flex-end;
+}
+
+.imageContainer img {
+  display: flex;
+  width: 522.8px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .imageContainer {
+    display: none;
+  }
+
+  .formWrapper {
+    gap: 0; /* 이미지가 없어졌으므로 간격 조정 */
+  }
+}
+
+.title {
+  display: flex;
+  width: 400px;
+  height: 42px;
+  padding: 8px 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  color: #2172f6;
+  font-weight: 600;
+}
+
+.formBox {
+  display: flex;
+  height: 522.8px;
+  padding: 48px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.form {
+  display: flex;
+  width: 400px;
+  height: 204px;
+  padding-top: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  flex-shrink: 0;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.inputField {
+  display: flex;
+  width: 400px;
+  height: 48px;
+  padding: 7px 12px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  border: 1px solid #ecf3ff;
+  background: #ecf3ff;
+  transition: all 0.2s ease-in-out;
+}
+
+.inputField::placeholder {
+  color: #cccccc;
+  transition: color 0.2s ease;
+}
+
+/* Enhanced input states */
+.inputField:hover {
+  background: #e5eeff;
+  border-color: #e5eeff;
+  box-shadow: 0 2px 4px rgba(33, 114, 246, 0.1);
+}
+
+.inputField:focus {
+  outline: none;
+  background: #ffffff;
+  border-color: #2172f6;
+}
+
+.inputField:focus::placeholder {
+  color: #a8a8a8;
+}
+
+.inputField:active {
+  background: #ffffff;
+  border-color: #155cc0;
+}
+
+.button {
+  display: flex;
+  width: 400px;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid #2172f6;
+  background: #2172f6;
+  color: #fff;
+  font-family: Pretendard;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  background-color: #155cc0;
+  transform: translateY(-1px);
+}
+
+.button:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 4px rgba(33, 114, 246, 0.2);
+}
+
+.links {
+  display: flex;
+  width: 400px;
+  padding-right: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #666;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: color 0.2s ease;
+}
+
+.links a:hover {
+  color: #333;
+}

@@ -1,3 +1,215 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e43c6eb415ff1d4ed45f4938d00dc28c831935e596b1f2a37a28e7ba835690c6
-size 3443
+.modal {
+  display: flex;
+  width: 400px;
+  height: 600px;
+  align-items: flex-start;
+  flex-shrink: 0;
+
+  font-family: Pretendard;
+
+  border-radius: 24px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+}
+
+.main {
+  display: flex;
+  width: 395px;
+  height: 600px;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.main h2 {
+  display: flex;
+  width: 359px;
+  height: 5%;
+  padding: 0px 12px;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+
+  color: #000;
+  font-family: Pretendard;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.mainInfo {
+  display: flex;
+  height: 437px;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+
+.mainInfo h2 {
+  display: flex;
+  height: 12%;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  align-self: stretch;
+
+  color: #000;
+  font-family: Pretendard;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
+}
+
+.inputField {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.input {
+  display: flex;
+  width: 335px;
+  height: 67px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.input input {
+  display: flex;
+  height: 36px;
+  padding: 20px;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  align-self: stretch;
+
+  border-radius: 8px;
+  border: 0.8px solid #ccc;
+}
+
+.input select {
+  display: flex;
+  width: 335px;
+  height: 36px;
+  padding: 0px 16px;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 8px;
+  border: 0.8px solid #ccc;
+}
+
+.visualization {
+  display: flex;
+  width: 335px;
+  align-items: center;
+  gap: 4px;
+}
+
+.visualization div {
+  display: flex;
+  width: 115px;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+
+  color: #464a4d;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.visualization div input {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.meetingLink {
+  display: flex;
+  width: 335px;
+  height: 80%;
+  padding: 4px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  flex-shrink: 0;
+
+  color: #666;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.inputLink {
+  display: flex;
+  width: 335px;
+  height: 67px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative; /* 추가: 아이콘의 절대 위치 기준점 */
+}
+
+.inputLink input {
+  display: flex;
+  height: 36px;
+  padding: 20px 40px 20px 20px; /* 수정: 오른쪽 패딩 추가로 아이콘 공간 확보 */
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 0.8px solid #ccc;
+}
+
+.inputLink img {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.subtext {
+  color: #666;
+  font-family: Pretendard;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.mainButtons {
+  display: flex;
+  width: 335px;
+  height: 32px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}

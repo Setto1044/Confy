@@ -1,3 +1,197 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:da265eb693b208a25245f0117b897215bf7247b4226810ecbe06db20c63b5105
-size 3262
+.formWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+  align-self: stretch;
+  font-family: Pretendard;
+}
+
+.imageContainer {
+  display: flex;
+  align-items: flex-end;
+}
+
+.imageContainer img {
+  display: flex;
+  width: 522.8px;
+  height: 522.8px;
+  justify-content: center;
+  align-items: center;
+  animation: floatingAnimation 3s ease-in-out infinite;
+}
+
+@media (max-width: 768px) {
+  .imageContainer {
+    display: none;
+  }
+
+  .formWrapper {
+    gap: 0; /* 이미지가 없어졌으므로 간격 조정 */
+  }
+}
+
+@keyframes floatingAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.title {
+  display: flex;
+  width: 400px;
+  height: 42px;
+  padding: 8px 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  color: #2172f6;
+  font-weight: 600;
+}
+
+.formBox {
+  display: flex;
+  width: 496px;
+  height: 522.8px;
+  padding: 48px 48px 0px 48px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.form {
+  display: flex;
+  height: 423px;
+  padding-top: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.inputField {
+  display: flex;
+  width: 400px;
+  height: 48px;
+  padding: 7px 12px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  border: 1px solid #ecf3ff;
+  background: #ecf3ff;
+  transition: all 0.2s ease-in-out;
+  font-size: 15px;
+}
+
+.inputField::placeholder {
+  color: #cccccc;
+  transition: color 0.2s ease;
+}
+
+.inputField:hover {
+  background: #e5eeff;
+  border-color: #e5eeff;
+  box-shadow: 0 2px 4px rgba(33, 114, 246, 0.1);
+}
+
+.inputField:focus {
+  outline: none;
+  background: #ffffff;
+  border-color: #2172f6;
+}
+
+.inputField:focus::placeholder {
+  color: #a8a8a8;
+}
+
+.checkboxContainer {
+  display: flex;
+  width: 400px;
+  height: 36px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  padding: 0 10px;
+}
+
+.checkboxContainer input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #2172f6;
+  border-radius: 4px;
+  cursor: pointer;
+  accent-color: #2172f6;
+}
+
+.checkboxContainer label {
+  color: #666;
+  font-size: 14px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkboxContainer:hover label {
+  color: #2172f6;
+}
+
+.button {
+  display: flex;
+  width: 400px;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid #2172f6;
+  background: #2172f6;
+  color: #fff;
+  font-family: Pretendard;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  background-color: #155cc0;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(33, 114, 246, 0.2);
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+.button:disabled {
+  background-color: #cccccc;
+  border-color: #cccccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.error {
+  color: #ff4d4d;
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: center;
+}

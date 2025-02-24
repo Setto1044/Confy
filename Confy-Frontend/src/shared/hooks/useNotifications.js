@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8232028d313aa2e23fc5fe63bcf9b9516ade24dc09614ed8580fe392feec2574
-size 905
+import { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
+import notificationClient from "../api/apiClient/notificationClient";
+
+const useNotifications = (userId) => {
+  const dispatch = useDispatch();
+  const [notifications, setNotifications] = useState([]);
+
+  useEffect(() => {
+    const fetchNotifications = async () => {
+      try {
+        const response = await notificationClient.get("/notifications/users");
+        setNotifications(response.data); // ✅ 상태에 직접 저장
+      } catch (error) {
+        console.error("❌ 알림 조회 실패:", error);
+      }
+    };
+
+    fetchNotifications();
+    const interval = setInterval(fetchNotifications, 60000);
+    return () => clearInterval(interval);
+  }, [userId]);
+
+  return notifications;
+};
+
+export default useNotifications;

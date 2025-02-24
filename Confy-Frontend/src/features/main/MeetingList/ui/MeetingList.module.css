@@ -1,3 +1,92 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ae3ef8538458887660d784e87c8ed0f173dda029de9460fa9a17129fec4d77d2
-size 1539
+.meetingList {
+  display: flex;
+  flex-grow: 1;
+  padding: 20px 40px 0px 40px;
+  flex-direction: column;
+  overflow-y: auto;
+  align-items: stretch;
+  gap: 12px;
+  background-color: #f8f8fa;
+  font-family: Pretendard;
+}
+
+.listView {
+  flex: 1;
+}
+
+.listHeader {
+  display: flex;
+  padding: 0px 12px;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+}
+
+.listIcon {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.listIcon img {
+  width: 20px;
+  height: 20px;
+}
+
+.listIcon :nth-child(2) {
+  visibility: hidden;
+}
+
+.clickableIcon {
+  cursor: pointer; /* 클릭 가능한 커서 스타일 */
+  transition: transform 0.2s ease-in-out;
+}
+
+.clickableIcon:active {
+  transform: scale(0.9); /* 클릭 시 살짝 축소되는 효과 */
+}
+
+.listHeaderTitle {
+  display: flex;
+  flex: 3; /* 더 넓은 공간 차지 */
+  padding: 12px 14px;
+  align-items: center;
+  gap: 10px;
+
+  color: #000;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.listHeaderGroup {
+  display: flex;
+  flex: 1; /* 상대적으로 좁은 공간 차지 */
+  padding: 12px 14px;
+  align-items: center;
+  gap: 10px;
+
+  color: #000;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.listHeaderDate {
+  display: flex;
+  flex: 1; /* 상대적으로 좁은 공간 차지 */
+  padding: 12px 14px;
+  align-items: center;
+  gap: 10px;
+
+  color: #000;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
