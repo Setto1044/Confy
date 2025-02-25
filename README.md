@@ -121,6 +121,12 @@ Confy는 **내용**를 관리합니다.
   </br> -->
 
 
+## 📌 ERD (Entity-Relationship Diagram)
+
+<img src="assets/ERD.png" width="800px">
+
+ </br>
+
 ## ⚒️ 기술 스택
 
 ### 🖥️ Backend
