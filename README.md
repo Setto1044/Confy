@@ -1,6 +1,6 @@
 # 회의를 더 스마트하게, Confy 👨‍💻
 
-<img src="images/none.gif" width="100%" />
+<img src="assets/메인화면.gif" width="100%" />
 
 ## 📅 프로젝트 정보
 
