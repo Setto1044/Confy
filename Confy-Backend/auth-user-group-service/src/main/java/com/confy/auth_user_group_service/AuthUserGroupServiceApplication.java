@@ -8,6 +8,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
 
 
 import java.util.TimeZone;
+
 @SpringBootApplication
 @EnableScheduling
 @EnableAsync
@@ -22,3 +23,4 @@ public class AuthUserGroupServiceApplication {
         TimeZone.setDefault(TimeZone.getTimeZone("Asia/Seoul"));
     }
 }
+
