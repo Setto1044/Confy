@@ -50,4 +50,4 @@ Windows는 cmd 창으로 아래 내용 수행<br>
 ##### ***Backend***
 1. **Intelij 사용**
 2. **실행**
-    - src → main → java → com.confy → BasicJavaApplication.java 파일 실행
+    - src → main → java → com.confy → BasicJavaApplication.java 파일 실행.
