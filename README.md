@@ -6,17 +6,17 @@
 
 <p align="center">
 
-### SSAFY 12기 2학기 공통 프로젝트
+<h3>SSAFY 12기 2학기 공통 프로젝트</h3>
 
 2025.01.06(월) ~ 2025.02.21(금) [7주]
 
 <a href="https://youtu.be/LS8G4rlMbOE">
-  <img src="images/thumbnail.png" width="250px" />
+  <img src="assets/thumbnail.png" width="500px" />
 </a>
 
 </br>
 
-<a href="https://youtu.be/LS8G4rlMbOE">😎 영상 포트폴리오 바로가기</a>
+<a href="https://youtu.be/LS8G4rlMbOE" >😎 영상 포트폴리오 바로가기</a>
 
 </p>
 
@@ -50,7 +50,7 @@ Confy는 회의 내용을 **시각화** 합니다.
 
 </br>
 
-|                   무제제                   |                  무제                   |
+|                   무제                   |                  무제                   |
 | :-------------------------------------------: | :------------------------------------------: |
 | <img src="images/none.gif"> | <img src="images/none.gif"> |
 
@@ -62,7 +62,7 @@ Confy는 회의 내용을 **시각화** 합니다.
 
 <!-- ### ✅ 무제
 
-Confy는 **내용**을을 지원합니다.
+Confy는 **내용**을 지원합니다.
 
 </br>
 
@@ -160,7 +160,7 @@ Confy는 **내용**를 관리합니다.
         <a href="https://github.com/notrealsilk"><img src="https://avatars.githubusercontent.com/notrealsilk" width=160/></a>
       </td>
       <td>
-         <a href="https://github.com/Mimiminz"><img src="https://avatars.githubusercontent.com/Mimiminz" width=160/></a> 
+         <a href="https://github.com/shinyou28"><img src="https://avatars.githubusercontent.com/shinyou28" width=160/></a> 
       </td>
     </tr>
 </table>
