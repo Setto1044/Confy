@@ -134,7 +134,7 @@ Confy는 **내용**를 관리합니다.
 본 프로젝트는 마이크로서비스 아키텍처(MSA) 기반으로 설계되었으며, 각 서비스는 독립적으로 운영되면서도 유기적으로 협력하여 전체 시스템을 구성합니다. <br>
 Spring Cloud Gateway를 활용하여 API Gateway를 구성하고, 회원 관리 및 인증 서버, 화상회의 관리 서버, 그리고 GPT 기반의 AI 서비스 서버를 분리하여 관리합니다.
 
-**또한 각각의 서버는 접근 가능한 DB 테이블이 분리되어 있습니다.**
+**또한 각각의 서버는 접근 가능한 DB 테이블을 분리하여 관리합니다.**
 - Auth-User-Group 서버 - users, user_group, notifications, groups DB 테이블에 접근이 가능
 - Meeting Management 서버 - summaries, user_meeting, meetings, sentences DB 테이블이 접근이 가능
 
