@@ -2,6 +2,7 @@ package com.confy.api_gateway_service.common.filter;
 
 import com.confy.api_gateway_service.common.dto.JwtParsedUserDto;
 import jakarta.annotation.PostConstruct;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.Ordered;
@@ -19,11 +20,12 @@ import reactor.core.publisher.Mono;
 import java.util.ArrayList;
 import java.util.List;
 
+@RequiredArgsConstructor
 @Component
 @Slf4j
 public class AuthenticationFilter implements WebFilter, Ordered {
 
-    private final WebClient.Builder webClientBuilder;
+    private final WebClient webClient;
 
     @Value("${services.auth-user-group-service.uri}")
     private String authServiceUrl;
@@ -37,12 +39,7 @@ public class AuthenticationFilter implements WebFilter, Ordered {
     @Value("${uri.images}")
     private String imageUri;
 
-    // 인증이 필요 없는 경로
     private static final List<String> EXCLUDED_PATHS = new ArrayList<>();
-
-    public AuthenticationFilter(WebClient.Builder webClientBuilder) {
-        this.webClientBuilder = webClientBuilder;
-    }
 
     private Mono<Void> unauthorizedResponse(ServerWebExchange exchange) {
         exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
@@ -72,7 +69,7 @@ public class AuthenticationFilter implements WebFilter, Ordered {
 
         String token = request.getHeaders().getFirst(HttpHeaders.AUTHORIZATION);
 
-        return webClientBuilder.build()
+        return webClient
                 .post()
                 .uri(authServiceUrl + "/auth/validate")
                 .header(HttpHeaders.AUTHORIZATION, token)
@@ -95,7 +92,6 @@ public class AuthenticationFilter implements WebFilter, Ordered {
                     return unauthorizedResponse(exchange);
                 });
     }
-
 
     @PostConstruct
     public void init() {
